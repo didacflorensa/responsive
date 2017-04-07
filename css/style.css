@@ -576,17 +576,26 @@ Sidebar
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
+html{
   background-size: cover;
   height:100%;
 }
 
 #feedback-page{
-  text-align:center;
+  text-align:left;
 }
 
+#form-params{
+    height:75%;
+}
+
+#form-params-bar{
+    height:25%;
+}
+
+
 #form-main{
-  width:100%;
+  width:50%;
   float:left;
   padding-top:0px;
 }
@@ -742,66 +751,176 @@ input:focus, textarea:focus {
   }
 }
 
+ /*Style to create a responsive table*/
+table {
+  border: 6px solid #ccc;
+  border-lapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+table tr {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
 
-.table_class{}
-/*
-Max width before this PARTICULAR table gets nasty
-This query will take effect for any screen smaller than 760px
-and also iPads specifically.
-*/
+@media only screen and (max-width: 580px) {
+  table {
+    border: 0;
+  }
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  table td:before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+
+
+/*######## Smart Blue  View Params Contact ########*/
+
+.smart {
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  max-width: 500px;
+  background: #F8F8F8;
+  padding: 30px 30px 20px 30px;
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #666;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+.smart h1 {
+  font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding: 20px 0px 20px 40px;
+  display: block;
+  margin: -30px -30px 10px -30px;
+  color: #FFF;
+  background: #337ab7;
+  text-shadow: 1px 1px 1px #949494;
+  border-radius: 5px 5px 0px 0px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  border-bottom:1px solid #337ab7;
+
+}
+.smart h1>span {
+  display: block;
+  font-size: 11px;
+  color: #FFF;
+}
+
+.smart label {
+  display: block;
+  margin: 0px 0px 5px;
+}
+.smart label>span {
+  float: left;
+  margin-top: 10px;
+  color: #5E5E5E;
+}
+.smart input[type="text"], .smart input[type="number"], .smart input[type="email"], .smart textarea, .smart select {
+  color: #555;
+  height: 30px;
+  line-height:15px;
+  width: 100%;
+  padding: 0px 0px 0px 10px;
+  margin-top: 2px;
+  border: 1px solid #E5E5E5;
+  background: #FBFBFB;
+  outline: 0;
+  -webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+  box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+  font: normal 14px/14px Arial, Helvetica, sans-serif;
+}
+.smart textarea{
+  height:100px;
+  padding-top: 10px;
+}
+.smart select {
+  text-indent: 0.01px;
+  text-overflow: '';
+  width:100%;
+  height:30px;
+}
+.smart .button {
+  background-color: #337ab7;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-border-radius: 5px;
+  border: none;
+  padding: 10px 25px 10px 25px;
+  color: #FFF;
+  text-shadow: 1px 1px 1px #949494;
+  margin-top: 15px;
+}
+ .smart .button:hover {
+   background-color:#337ab7;
+ }
+
+ .smart .buttonLabel {
+   text-align: center;
+ }
+
 
 
 @media
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
-
-  /* Force table to not be like tables anymore */
-  .table_class table, thead, tbody, th, td, tr {
-    display: block;
-  }
-
-  /* Hide table headers (but not display: none;, for accessibility) */
-  .table_class thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  .table_class tr { border: 1px solid #ccc; }
-
-  .table_class td {
-    /* Behave  like a "row" */
-    border: none;
-    border-bottom: 10px solid #eee;
-    position: relative;
-    padding-left: 50%;
-  }
-
-  .table_class td:before {
-    /* Now like a table header */
-    position: absolute;
-    /* Top/left values mimic padding */
-    top: 6px;
-    left: 6px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
-  }
-
-  .firstTD {
-    background-color: #ff7e66;
-  }
-  /*
-  Label the data
-  */
-  .table_class td:nth-of-type(1):before { content: "Name"; }
-  .table_class td:nth-of-type(2):before { content: "Postion"; }
-  .table_class td:nth-of-type(3):before { content: "Office"; }
-  .table_class td:nth-of-type(4):before { content: "Age"; }
-  .table_class td:nth-of-type(5):before { content: "Start Date"; }
-  .table_class td:nth-of-type(6):before { content: "Salary"; }
-
+	.smart h1{
+	  	background: #008040;
+	}
 }
-
-
-
