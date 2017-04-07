@@ -58,6 +58,14 @@
 				</li>
 				<li class="has-children settings">
 					<a href="#0">Settings</a>
+					<ul>
+						<li><a href="user-params.html">User</a></li>
+						<li><a href="#0">Farm</a></li>
+						<li><a href="#0">Production</a></li>
+						<li><a href="#0">Censo</a></li>
+						<li><a href="#0">Price</a></li>
+						<li><a href="#0">Productividad</a></li>
+					</ul>
 				</li><li class="has-children summary">
 					<a href="#0">Summary</a>
 				</li>
@@ -81,7 +89,8 @@
 		</nav>
 
 		 <div class="container-fluid content-wrapper">
-
+			<h1>Responsive Table (Tablet, Mobile, PC)</h1>
+			
 		 	 <div class="container-fluid content-wrapper">
                 <div class="row">
                     <div class="col-lg-12">
@@ -89,12 +98,12 @@
                <table id="example" class="display" width="100%" data-page-length="25" data-order="[[ 1, &quot;asc&quot; ]]">
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th data-orderable="false">Start date</th>
-                <th>Salary</th>
+                <th scope="col">Name</th>
+                <th scope="col">Position</th>
+                <th scope="col">Office</th>
+                <th scope="col">Age</th>
+                <th data-orderable="false" scope="col">Start date</th>
+                <th scope="col">Salary</th>
             </tr>
         </thead>
         <tfoot>
@@ -109,108 +118,108 @@
         </tfoot>
         <tbody>
             <tr>
-                <td class="firstTD">Tiger Nixon</td>
-                <td>System Architect</td>
-                <td>Edinburgh</td>
-                <td>61</td>
-                <td>2011/04/25</td>
-                <td>$320,800</td>
+                <td data-label="Name">Tiger Nixon</td>
+                <td data-label="Position">System Architect</td>
+                <td data-label="Office">Edinburgh</td>
+                <td data-label="Age">61</td>
+                <td data-label="Start date">2011/04/25</td>
+                <td data-label="Salary">$320,800</td>
             </tr>
             <tr>
-                <td class="firstTD">Garrett Winters</td>
-                <td>Accountant</td>
-                <td>Tokyo</td>
-                <td>63</td>
-                <td>2011/07/25</td>
-                <td>$170,750</td>
+                <td data-label="Name">Garrett Winters</td>
+                <td data-label="Position">Accountant</td>
+                <td data-label="Office">Tokyo</td>
+                <td data-label="Age">63</td>
+                <td data-label="Start date">2011/07/25</td>
+                <td data-label="Salary">$170,750</td>
             </tr>
             <tr>
-                <td class="firstTD">Ashton Cox</td>
-                <td>Junior Technical Author</td>
-                <td>San Francisco</td>
-                <td>66</td>
-                <td>2009/01/12</td>
-                <td>$86,000</td>
+                <td data-label="Name">Ashton Cox</td>
+                <td data-label="Position">Junior Technical Author</td>
+                <td data-label="Office">San Francisco</td>
+                <td data-label="Age">66</td>
+                <td data-label="Start date">2009/01/12</td>
+                <td data-label="Salary">$86,000</td>
             </tr>
             <tr>
-                <td class="firstTD">Cedric Kelly</td>
-                <td>Senior Javascript Developer</td>
-                <td>Edinburgh</td>
-                <td>22</td>
-                <td>2012/03/29</td>
-                <td>$433,060</td>
+                <td data-label="Name">Cedric Kelly</td>
+                <td data-label="Position">Senior Javascript Developer</td>
+                <td data-label="Office">Edinburgh</td>
+                <td data-label="Age">22</td>
+                <td data-label="Start date">2012/03/29</td>
+                <td data-label="Salary">$433,060</td>
             </tr>
             <tr>
-                <td class="firstTD">Airi Satou</td>
-                <td>Accountant</td>
-                <td>Tokyo</td>
-                <td>33</td>
-                <td>2008/11/28</td>
-                <td>$162,700</td>
+                <td data-label="Name">Airi Satou</td>
+                <td data-label="Position">Accountant</td>
+                <td data-label="Office"> Tokyo</td>
+                <td data-label="Age">33</td>
+                <td data-label="Start date">2008/11/28</td>
+                <td data-label="Salary">$162,700</td>
             </tr>
             <tr>
-                <td class="firstTD">Brielle Williamson</td>
-                <td>Integration Specialist</td>
-                <td>New York</td>
-                <td>61</td>
-                <td>2012/12/02</td>
-                <td>$372,000</td>
+                <td data-label="Name">Brielle Williamson</td>
+                <td data-label="Position">Integration Specialist</td>
+                <td data-label="Office">New York</td>
+                <td data-label="Age">61</td>
+                <td data-label="Start date">2012/12/02</td>
+                <td data-label="Salary">$372,000</td>
             </tr>
             <tr>
-                <td>Herrod Chandler</td>
-                <td>Sales Assistant</td>
-                <td>San Francisco</td>
-                <td>59</td>
-                <td>2012/08/06</td>
-                <td>$137,500</td>
+                <td data-label="Name">Herrod Chandler</td>
+                <td data-label="Position">Sales Assistant</td>
+                <td data-label="Office">San Francisco</td>
+                <td data-label="Age">59</td>
+                <td data-label="Start date">2012/08/06</td>
+                <td data-label="Salary">$137,500</td>
             </tr>
             <tr>
-                <td>Rhona Davidson</td>
-                <td>Integration Specialist</td>
-                <td>Tokyo</td>
-                <td>55</td>
-                <td>2010/10/14</td>
-                <td>$327,900</td>
+                <td data-label="Name">Rhona Davidson</td>
+                <td data-label="Position">Integration Specialist</td>
+                <td data-label="Office">Tokyo</td>
+                <td data-label="Age">55</td>
+                <td data-label="Start date">2010/10/14</td>
+                <td data-label="Salary">$327,900</td>
             </tr>
             <tr>
-                <td>Colleen Hurst</td>
-                <td>Javascript Developer</td>
-                <td>San Francisco</td>
-                <td>39</td>
-                <td>2009/09/15</td>
-                <td>$205,500</td>
+                <td data-label="Name">Colleen Hurst</td>
+                <td data-label="Position">Javascript Developer</td>
+                <td data-label="Office">San Francisco</td>
+                <td data-label="Age">39</td>
+                <td data-label="Start date">2009/09/15</td>
+                <td data-label="Salary">$205,500</td>
             </tr>
             <tr>
-                <td>Sonya Frost</td>
-                <td>Software Engineer</td>
-                <td>Edinburgh</td>
-                <td>23</td>
-                <td>2008/12/13</td>
-                <td>$103,600</td>
+                <td data-label="Name">Sonya Frost</td>
+                <td data-label="Position">Software Engineer</td>
+                <td data-label="Office">Edinburgh</td>
+                <td data-label="Age">23</td>
+                <td data-label="Start date">2008/12/13</td>
+                <td data-label="Salary">$103,600</td>
             </tr>
             <tr>
-                <td>Jena Gaines</td>
-                <td>Office Manager</td>
-                <td>London</td>
-                <td>30</td>
-                <td>2008/12/19</td>
-                <td>$90,560</td>
+                <td data-label="Name">Jena Gaines</td>
+                <td data-label="Position">Office Manager</td>
+                <td data-label="Office">London</td>
+                <td data-label="Age">30</td>
+                <td data-label="Start date">2008/12/19</td>
+                <td data-label="Salary">$90,560</td>
             </tr>
             <tr>
-                <td>Quinn Flynn</td>
-                <td>Support Lead</td>
-                <td>Edinburgh</td>
-                <td>22</td>
-                <td>2013/03/03</td>
-                <td>$342,000</td>
+                <td data-label="Name">Quinn Flynn</td>
+                <td data-label="Position">Support Lead</td>
+                <td data-label="Office">Edinburgh</td>
+                <td data-label="Age">22</td>
+                <td data-label="Start date">2013/03/03</td>
+                <td data-label="Salary">$342,000</td>
             </tr>
             <tr>
-                <td>Charde Marshall</td>
-                <td>Regional Director</td>
-                <td>San Francisco</td>
-                <td>36</td>
-                <td>2008/10/16</td>
-                <td>$470,600</td>
+                <td data-label="Name">Charde Marshall</td>
+                <td data-label="Position">Regional Director</td>
+                <td data-label="Office">San Francisco</td>
+                <td data-label="Age">36</td>
+                <td data-label="Start date">2008/10/16</td>
+                <td data-label="Salary">$470,600</td>
             </tr>
             <tr>
                 <td>Haley Kennedy</td>
