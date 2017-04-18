@@ -1,0 +1,574 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$("#add_newFarmForm").hide();
+	      var count = 0; // To Count Blank Fields
+	      /*------------ Validation Function-----------------*/
+	      $(".submit_btn").click(function (event) {
+	        var radio_check = $('.rad'); // Fetching Radio Button By Class Name
+	        var input_field = $('.text_field'); // Fetching All Inputs With Same Class Name text_field & An HTML Tag textarea
+	        var text_area = $('textarea');
+
+			// Validating Radio Button
+	        if (radio_check[0].checked == false && radio_check[1].checked == false) {
+	          var y = 0;
+	        } else {
+	          var y = 1;
+	        }
+			// For Loop To Count Blank Inputs
+	        for (var i = input_field.length; i > count; i--) {
+	          if (input_field[i - 1].value == '' || text_area.value == '') {
+	            count = count + 1;
+	          } else {
+	            count = 0;
+	          }
+	        }
+
+			// Notifying Validation
+		    if (count != 0 || y == 0) {
+		      alert("*All Fields are mandatory*");
+		      event.preventDefault();
+		    } else {
+		      return true;
+		    }
+		  });
+
+
+	      $(".pre_btn").click(function () { // Function Runs On PREVIOUS Button Click
+	        $(this).parent().prev().fadeIn('slow');
+	        $(this).parent().css({
+	          'display': 'none'
+	        });
+	// Removing Class Active To Show Steps Backward;
+	        $('.active:last').removeClass('active');
+	      });
+
+      		$(".submit_btn").click(function (e) {
+		        if ($('input').val() == "" || $('textarea').val() == "") {
+		          alert("*All Fields are mandatory*");
+		          return false;
+		        } else {
+		          return true;
+		        }
+      		});	
+
+	</script>
+
+
+    <title>Responsive Sidebar Navigation | CodyHouse</title>
+</head>
+<body>
+<header class="cd-main-header">
+    <a href="#0" class="cd-logo"><img src="img/epig2-logo.svg" alt="Logo"></a>
+
+    <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+    <nav class="cd-nav">
+        <ul class="cd-top-nav">
+            <li><a href="crearSession.html">New</a></li>
+            <li><a href="#0">Dashboard</a></li>
+			<li><a href="contact.html">Contact</a></li>
+            <li class="has-children account">
+                <a href="#0">
+                    <!--<img src="img/cd-avatar.png" alt="avatar"> -->
+                    dflorensa
+                </a>
+
+                <ul>
+
+                    <li><a href="#0">Settings</a></li>
+                    <li><a href="#0">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header> <!-- .cd-main-header -->
+
+
+<main class="cd-main-content">
+    <nav class="cd-side-nav">
+        <ul>
+            <li class="cd-label">Main</li>
+            <li class="has-children charts">
+                <a href="#0">Charts</a>
+                <ul>
+                    <li><a href="chart.html">Charts 1</a></li>
+                    <li><a href="#0">Charts 2</a></li>
+                    <li><a href="#0">Charts 3</a></li>
+                </ul>
+            </li>
+            <li class="has-children ranking">
+                <a href="table.html">Ranking</a>
+            </li>
+            <li class="has-children settings">
+                <a href="viewParams.html">Settings</a>
+					<ul>
+						<li><a href="user-params.html">User</a></li>
+						<li><a href="#0">Farm</a></li>
+						<li><a href="#0">Production</a></li>
+						<li><a href="#0">Censo</a></li>
+						<li><a href="#0">Price</a></li>
+						<li><a href="#0">Productividad</a></li>
+					</ul>                
+            </li><li class="has-children summary">
+            <a href="#0">Summary</a>
+        </li>
+        </ul>
+
+        <ul>
+            <li class="cd-label">Actions</li>
+            <li class="has-children notifications active">
+                <a href="#0">Notifications<span class="count">3</span></a>
+                <!--
+                <ul>
+                    <li><a href="#0">All Notifications</a></li>
+                    <li><a href="#0">Friends</a></li>
+                    <li><a href="#0">Other</a></li>
+                </ul> -->
+            </li>
+            <li class="has-children users">
+                <a href="#0">Pdf</a>
+            </li>
+            <li class="has-children contact">
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid content-wrapper">
+        
+			  <script>	
+			      $("#pre_btn").click(function () { // Function Runs On PREVIOUS Button Click
+			        $(this).parent().prev().fadeIn('slow');
+			        $(this).parent().css({
+			          'display': 'none'
+			        });
+			// Removing Class Active To Show Steps Backward;
+			        $('.active:last').removeClass('active');
+			      });
+
+		      		$("#submit_btn").click(function (e) {
+				        if ($('input').val() == "" || $('textarea').val() == "") {
+				          alert("*All Fields are mandatory*");
+				          return false;
+				        } else {
+				          return true;
+				        }
+		      		});	
+
+			    function input() {
+			      $(document).ready( function () {
+			        var val = $("#num_ciclos").val();
+			        $("#cerdas_ciclo").empty();
+			        $("#ratio_fertilidad").empty();
+			        $("#mortalidad_lechones").empty();
+
+
+			        for(i = 0; i<val; i++){
+			          $("#cerdas_ciclo").append("<input type='number' class='col-xs-1' style='width: 45px; height: 30px; margin-left: 15px'>");
+			          $("#ratio_fertilidad").append("<input type='number' class='col-xs-1' style='width: 45px; height: 30px; margin-left: 15px'>");
+			          $("#mortalidad_lechones").append("<input type='number' class='col-xs-1' style='width: 45px; height: 30px; margin-left: 15px'>");
+			        }
+
+			      })
+			    }
+
+			    function info_imagen() {
+			      alert("Nombre del parámetro \n" +
+			        "Información sobre el parámetro");
+			    }
+
+			    function nextStep() {
+			  		$(document).ready( function () {
+				    	$(this).parent().next().fadeIn('slow');
+				        $(this).parent().css({
+				          'display': 'none'
+			        	});
+				        $('.active').next().addClass('active');
+			    	});
+			    }	
+
+			  </script>
+
+
+
+  <!--Multistep Form-->
+
+		      <form id="msform" class="regform" >
+		      <!--Progress Bar-->
+		      <ul id="progressbar">
+		        <li class="active"><p> Configuración</p></li>
+		        <li><p>Producción</p></li>
+		        <li><p>Censo</p></li>
+		        <li><p>Consumo</p></li>
+		        <li><p>Precios</p></li>
+		        <li><p>Productividad</p></li>
+		      </ul>
+
+
+
+		      <!-- Form - Step 1. Configuration-->
+		      <fieldset>
+
+		        <div class="col-xs-12">
+		          <label for="select_farm"><p>Elige una granja</p></label>
+		          <div class="selectandadd">
+		            <select class="selectandadd" id="select_farm" name="select_farm"></select>
+		            <button id="addFarm" type="submit" class="add-button">&#x271A;</button>
+		          </div>
+		        </div>
+		        <div class="col-xs-12" id="add_newFarmForm">
+		          <label for="newFarm"> <p>Nombre de la granja</p></label>
+		          <div class="selectandadd">
+		            <input class="selectandaddInput" id="newFarm" name="newFarm" type="text" class="selectandadd">
+		            <button type="submit" class="add-button" id="storeFarm" >&#10003;</button>
+		          </div>
+		        </div>
+
+
+		        <div class="col-xs-12">
+		          <label for="calibration"><p>Elige operacion</p></label>
+		          <select class="options" id="calibration" name="calibration">
+		            <option value="calibracion" id="calibracion"><p>Calibración<p></option>
+		            <option value="simulacion" id="simulacion"><p>Simulación</p></option>
+		          </select>
+		        </div>
+
+		        <div class="col-xs-12">
+		          <label for="notifications"> Como recibir notifiaciones</label>
+		          <select id="notifications" name="notifications" onchange="mostrar()">
+		            <option value="1" id="email">Email</option>
+		            <option value="2" id="sms">SMS</option>
+		          </select>
+		        </div>
+
+
+		        <div class="right-form">
+		          <a name="exit" type="button" value="Cancelar" href="chart.html" class="next action-button next_btn">Cancelar</a>
+		          <input class="next action-button" id="next_btn" name="next" type="button" value="Siguiente" onclick="input(); nextStep()">
+		        </div>
+
+
+		      </fieldset>
+
+
+		       <!-- Form - Step 2. Production-->
+		        <fieldset>
+		          <!-- Número máximo de ciclos reproductivos -->
+		          <div class="col-xs-12">
+		            <label for="num_ciclos">{{"maximoCiclos"|translate}}  </label>
+		            <div>
+		              <input class="createSession" id="num_ciclos" name="num_ciclos" type="number" min="1" max="12" value="12">
+		              <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
+		            </div>
+		          </div>
+		          <!-- Mínimo y máximo número de cubriciones -->
+		          <div class="col-xs-12">
+		          <label for="select_farm">{{"minMaxCubriciones"|translate}}</label>
+		          <div>
+		            <input class="createSession2" id="minCubriciones" name="minCubriciones" type="number" min="1" max="5" value="1">
+		            <input class="createSession2" id="maxCubriciones" name="maxCubriciones" type="number" min="1" max="5" value="1">
+		            <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
+		          </div>
+		            </div>
+		          <!-- Mínimo y máximo de semanas de lactación  -->
+		          <div class="col-xs-12">
+		          <label for="select_farm"> {{"minMaxSemLactacion"|translate}} </label>
+		          <div>
+		            <input class="createSession2" id="minLactacion" name="minLactacion" type="number" value="4" min="1" max="6">
+		            <input class="createSession2" id="maxLactacion" name="maxLactacion" type="number" value="4" min="1" max="6">
+		            <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
+		          </div>
+		            </div>
+		          <!-- Form Buttons -->
+		          <div class="right-form">
+		            <input name="exit" type="button" value="Cancelar" ui-sref="home" class="action-button">
+		            <input class="previous action-button" name="previous" type="button" value="Anterior" onclick="input()">
+		            <input class="next action-button" name="next" type="button" value="Siguiente" onclick="input()">
+		          </div>
+		        </fieldset>
+
+		        <!-- Form - Step 3. Censo-->
+		        <fieldset>
+
+		          <!-- Tiempo medio de permanencia en granja de las cerdas en los últimos 5 años-->
+		          <div class="col-xs-12">
+		            <label for="tiempo_med">{{"tiempoPermanenciaGranja"|translate}} </label>
+		            <div>
+		              <input  class="createSession" id="tiempo_med" name="tiempo_med" value="3,21">
+		              <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
+		            </div>
+		          </div>
+
+		          <!-- % Reposición Actual -->
+		          <div class="col-xs-12">
+		            <label for="reposicion">{{"reposicionActual"|translate}}</label>
+		            <div>
+		              <input  class="createSession" id="reposicion" name="reposicion" value="31" min="0" max="100">
+		              <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
+		            </div>
+		          </div>
+
+		          <!-- Historial de cerdas no presentes en los últimos 5 años con su producción de nacidos vivos por ciclo  -->
+		          <div class="col-xs-12">
+		            <label> {{"historialCerdasCiclo"|translate}} </label>
+		            <div>
+		              <input class="createSession" type="file" name="historial_cerdas" />
+		              <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
+		            </div>
+		          </div>
+
+		          <!-- Historial de cerdas presentes con su producción de nacidos vivos por ciclo  -->
+		          <div class="col-xs-12">
+		            <label> {{"historialCerdasPresentesCiclo" | translate}} </label>
+		            <div>
+		              <input class="createSession" type="file" name="historial_cerdas_presentes" />
+		              <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
+		            </div>
+		          </div>
+
+		          <!-- % Cerdas presentes por ciclo  -->
+		          <div class="col-xs-12">
+		            <label for="cerdas_ciclo">{{"cerdasPorCiclo" | translate}} </label>
+		            <div>
+		              <div class="col-xs-12" id="cerdas_ciclo" name="cerdas_ciclo">
+		              </div>
+
+		            </div>
+		          </div>
+
+		          <!-- Form Buttons -->
+		          <div class="right-form">
+		            <input name="exit" type="button" value="Cancelar" ui-sref="home" class="action-button">
+		            <input class="previous action-button" name="previous" type="button" value="Anterior" onclick="input()">
+		            <input class="next action-button" name="next" type="button" value="Siguiente" onclick="input()">
+		          </div>
+		        </fieldset>
+
+
+		        <!-- Form - Step 4. Consumo-->
+		        <fieldset>
+
+		          <!-- Inseminación (Kg/dia)-->
+		          <div class="col-xs-12">
+		            <label for="inseminación"> {{"inseminacionKgDia"|translate}}  </label>
+		            <div>
+		              <input class="createSession" id="inseminación" name="inseminación" type="number" min="1" max="5" value="3,75">
+		              <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
+		            </div>
+		          </div>
+
+		          <!-- Gestación 2-3 días antes del parto (Kg/dia) -->
+		          <div class="col-xs-12">
+		            <label for="antesParto"> {{"gestacionAntesParto"|translate}}  </label>
+		            <div>
+		              <input class="createSession" id="antesParto" name="antesParto" type="number" min="1" max="5" value="2,25">
+
+		              <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
+		            </div>
+		          </div>
+
+		          <!-- Gestación (kg/dia) -->
+		          <div class="col-xs-12">
+		            <label> {{"gestacionKgDia"|translate}}  </label>
+		            <div class='full-input triple-input custom-input'><label>{{"set14"|translate}}</label>
+		              <input clas="triple-input custom-input" type='number' name='gest1-4' id="gest1-4" value="2"></div>
+
+		            <div class='full-input triple-input custom-input'><label>{{"set512"|translate}}</label>
+		              <input clas="triple-input custom-input" type='number' name='gest5-12' id="gest5-12" value="2"></div>
+
+		            <div class='full-input triple-input custom-input' ><label>{{"set1316"|translate}}</label>
+		              <input clas="triple-input custom-input" type='number' name='gest13-16' id="gest13-16" value="3"></div>
+		            <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
+		          </div>
+
+		          <!-- Lechón (Kg/dia)  -->
+		          <div class="col-xs-12">
+		            <label> {{"lechonKgDia"|translate}}  </label>
+		            <div class='full-input triple-input custom-input'><label>{{"set3"|translate}}</label>
+		              <input clas="triple-input custom-input" type='number' name='lechon3' id="lechon3" value="0,03"></div>
+
+		            <div class='full-input triple-input custom-input'><label>{{"set4"|translate}}</label>
+		              <input clas="triple-input custom-input" type='number' name='lechon4' id="lechon4" value="0,12"></div>
+
+		            <div class='full-input triple-input custom-input' ><label>{{"set5"|translate}}</label>
+		              <input clas="triple-input custom-input" type='number' name='lechon5' id="lechon5" value="0,61"></div>
+		            <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
+		          </div>
+
+		          <!-- Form Buttons -->
+		          <div class="right-form">
+		            <input name="exit" type="button" value="Cancelar" ui-sref="home" class="action-button">
+		            <input class="previous action-button" name="previous" type="button" value="Anterior" onclick="input()">
+		            <input class="next action-button" name="next" type="button" value="Siguiente" onclick="input()">
+		          </div>
+		        </fieldset>
+
+
+		        <!-- Form - Step 5. Precios-->
+		        <fieldset>
+
+		          <!-- Inseminación artificial (€)-->
+		          <div class="col-xs-12">
+		            <label for="inseminación"> {{"inseminacionArtificial"|translate}}  </label>
+		            <div>
+		              <input class="createSession" id="inseminacion_artificial" name="inseminacion" type="number">
+		              <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
+		            </div>
+		          </div>
+
+		          <!-- Pienso (€/Kg)-->
+		          <div class="col-xs-12">
+		            <label> {{"piensoKg"|translate}}  </label>
+		            <div class='full-input four-input custom-input'><label>{{"cubricion"|translate}}</label>
+		              <input clas="four-input custom-input" type='number' name='Cubricion' id="Cubricion" value="0,27"></div>
+
+		            <div class='full-input four-input custom-input'><label>{{"gestacion"|translate}}</label>
+		              <input clas="four-input custom-input" type='number' name='Gestacion' id="Gestacion" value="0,27"></div>
+
+		            <div class='full-input four-input custom-input' ><label>{{"lactacion"|translate}} </label>
+		              <input clas="four-input" type='number' name='Lactacion' id="Lactacion" value="0,27"></div>
+
+		            <div class='full-input four-input custom-input' ><label>{{"lechones"|translate}} </label>
+		              <input clas="four-input custom-input" type='number' name='Lechones' id="Lechones" value="0,40"></div>
+		            <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
+		          </div>
+
+		          <!-- Lechón vendido (€)-->
+		          <div class="col-xs-12">
+		            <label> {{"lechonVendido"|translate}} </label>
+		            <div>
+		              <input class="createSession" id="lechon" name="lechon" type="number" value="33,38">
+		              <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
+		            </div>
+		          </div>
+
+		          <!-- Cerdas (€)-->
+		          <div class="col-xs-12">
+		            <label> {{"cerdasEuros"|translate}}  </label>
+
+		            <div class='full-input double-input custom-input'><label>{{"reposicion"|translate}}</label>
+		              <input clas="double-input custom-input" type='number' name='reposicion' id="reposicion_cerda" value="228,42"></div>
+
+		            <div class='full-input double-input custom-input'><label>{{"vendida"|translate}}</label>
+		              <input clas="double-input custom-input" type='number' name='vendida' id="vendida" value="0,81"></div>
+
+		            <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
+
+		          </div>
+
+		          <!-- Form Buttons -->
+		          <div class="right-form">
+		            <input name="exit" type="button" value="Cancelar" ui-sref="home" class="action-button">
+		            <input class="previous action-button" name="previous" type="button" value="Anterior" onclick="input()">
+		            <input class="next action-button" name="next" type="button" value="Siguiente" onclick="input()">
+		          </div>
+		        </fieldset>
+
+
+		        <!-- Form - Step 6. Productividad-->
+		        <fieldset>
+		          <!-- Partos -->
+		          <div class="col-xs-12">
+		            <label> {{"partos"|translate}}  </label>
+		            <div class='full-input double-input custom-input'><label>{{"numMedioAño"|translate}}</label>
+		              <input clas="double-input custom-input" type='number' name='partosMedio' id="partosMedio" value="2,30"></div>
+
+		            <div class='full-input double-input custom-input'><label>{{"intervaloDias"|translate}}</label>
+		              <input clas="double-input custom-input" type='number' name='intervalo' id="intervalo" value="150,51"></div>
+
+		            <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
+		          </div>
+
+		          <!-- Destete -->
+		          <div class="col-xs-12">
+		            <label> {{"destete"|translate}}  </label>
+		            <div class='full-input triple-input custom-input'><label>{{"destetados"|translate}}  <br> {{"cerdaAño"|translate}}</label>
+		              <input clas="triple-input custom-input" type='number' name='destetados' id="destetados" value="24,13"></div>
+
+		            <div class='full-input triple-input custom-input'><label>{{"destetados"|translate}}   <br>  {{"cerda"|translate}}</label>
+		              <input clas="triple-input custom-input" type='number' name='destetados2' id="destetados2" value="55,43"></div>
+
+		            <div class='full-input triple-input custom-input'><label>{{"tamañoMedioCamada"|translate}} </label>
+		              <input clas="triple-input custom-input" type='number' name='destetados3' id="destetados3" value="10,24"></div>
+
+		            <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
+
+		          </div>
+
+		          <!-- Número medio de camadas (Cerda) -->
+		          <div class="col-xs-12">
+		            <label for="inseminación"> {{"numeroMedioCamadas"|translate}}  </label>
+		            <div>
+		              <input class="createSession" id="camadas" name="camadas" type="number" min="1" max="5" value="7,78">
+		              <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
+		            </div>
+		          </div>
+
+		          <!-- % Ratio de fertilidad (Ciclos) -->
+		          <div class="col-xs-12">
+		            <label>{{"ratioFertilidad"|translate}} </label>
+		            <div>
+		              <div class="col-xs-12" id="ratio_fertilidad" name="ratio_fertilidad">
+		              </div>
+		            </div>
+		          </div>
+
+		          <!-- % Mortalidad de los lechones en el primer parto (Ciclos)  -->
+		          <div class="col-xs-12">
+		            <label>{{"mortalidadLechonesPrimerParto"|translate}} </label>
+		            <div>
+		              <div class="col-xs-12" id="mortalidad_lechones" name="mortalidad_lechones">
+		              </div>
+		            </div>
+		          </div>
+
+		          <!-- Form Buttons -->
+		          <div class="right-form">
+		            <input name="exit" type="button" value="Cancelar" ui-sref="home" class="action-button">
+		            <input class="previous action-button" name="previous" type="button" value="Anterior" onclick="input()">
+		            <input class="next action-button" name="next" type="button" value="Siguiente" onclick="input()">
+		          </div>
+		        </fieldset>
+
+		        <!-- Ending - User Info -->
+		      <fieldset>
+		        <label>{{"mensajeFinal"|translate}}</label>
+		        <!-- Form Buttons -->
+		        <div class="right-form">
+		          <input name="exit" type="button" id="terminar" value="Terminar" ui-sref="home" class="action-button">
+		        </div>
+		      </fieldset>
+		      </fieldset>
+		    </form>
+		  </div>
+
+    </div>
+
+</main> <!-- .cd-main-content -->
+
+
+</div>
+
+
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery.menu-aim.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/chars.js"></script>
+<script src="js/chart.js"></script>
+
+</body>
+</html>
