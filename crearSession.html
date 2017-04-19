@@ -13,60 +13,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-	<script type="text/javascript">
-		$("#add_newFarmForm").hide();
-	      var count = 0; // To Count Blank Fields
-	      /*------------ Validation Function-----------------*/
-	      $(".submit_btn").click(function (event) {
-	        var radio_check = $('.rad'); // Fetching Radio Button By Class Name
-	        var input_field = $('.text_field'); // Fetching All Inputs With Same Class Name text_field & An HTML Tag textarea
-	        var text_area = $('textarea');
-
-			// Validating Radio Button
-	        if (radio_check[0].checked == false && radio_check[1].checked == false) {
-	          var y = 0;
-	        } else {
-	          var y = 1;
-	        }
-			// For Loop To Count Blank Inputs
-	        for (var i = input_field.length; i > count; i--) {
-	          if (input_field[i - 1].value == '' || text_area.value == '') {
-	            count = count + 1;
-	          } else {
-	            count = 0;
-	          }
-	        }
-
-			// Notifying Validation
-		    if (count != 0 || y == 0) {
-		      alert("*All Fields are mandatory*");
-		      event.preventDefault();
-		    } else {
-		      return true;
-		    }
-		  });
-
-
-	      $(".pre_btn").click(function () { // Function Runs On PREVIOUS Button Click
-	        $(this).parent().prev().fadeIn('slow');
-	        $(this).parent().css({
-	          'display': 'none'
-	        });
-	// Removing Class Active To Show Steps Backward;
-	        $('.active:last').removeClass('active');
-	      });
-
-      		$(".submit_btn").click(function (e) {
-		        if ($('input').val() == "" || $('textarea').val() == "") {
-		          alert("*All Fields are mandatory*");
-		          return false;
-		        } else {
-		          return true;
-		        }
-      		});	
-
-	</script>
-
 
     <title>Responsive Sidebar Navigation | CodyHouse</title>
 </head>
@@ -117,10 +63,10 @@
                 <a href="viewParams.html">Settings</a>
 					<ul>
 						<li><a href="user-params.html">User</a></li>
-						<li><a href="#0">Farm</a></li>
-						<li><a href="#0">Production</a></li>
-						<li><a href="#0">Censo</a></li>
-						<li><a href="#0">Price</a></li>
+						<li><a href="farm-params.html">Farm</a></li>
+						<li><a href="produccion-params.html">Production</a></li>
+						<li><a href="censo-params.html">Censo</a></li>
+                        <li><a href="precio-params.html">Price</a></li>
 						<li><a href="#0">Productividad</a></li>
 					</ul>                
             </li><li class="has-children summary">
@@ -140,7 +86,7 @@
                 </ul> -->
             </li>
             <li class="has-children users">
-                <a href="#0">Pdf</a>
+                <a href="pdf.html">Pdf</a>
             </li>
             <li class="has-children contact">
                 <a href="contact.html">Contact</a>
@@ -151,24 +97,6 @@
     <div class="container-fluid content-wrapper">
         
 			  <script>	
-			      $("#pre_btn").click(function () { // Function Runs On PREVIOUS Button Click
-			        $(this).parent().prev().fadeIn('slow');
-			        $(this).parent().css({
-			          'display': 'none'
-			        });
-			// Removing Class Active To Show Steps Backward;
-			        $('.active:last').removeClass('active');
-			      });
-
-		      		$("#submit_btn").click(function (e) {
-				        if ($('input').val() == "" || $('textarea').val() == "") {
-				          alert("*All Fields are mandatory*");
-				          return false;
-				        } else {
-				          return true;
-				        }
-		      		});	
-
 			    function input() {
 			      $(document).ready( function () {
 			        var val = $("#num_ciclos").val();
@@ -190,16 +118,6 @@
 			      alert("Nombre del parámetro \n" +
 			        "Información sobre el parámetro");
 			    }
-
-			    function nextStep() {
-			  		$(document).ready( function () {
-				    	$(this).parent().next().fadeIn('slow');
-				        $(this).parent().css({
-				          'display': 'none'
-			        	});
-				        $('.active').next().addClass('active');
-			    	});
-			    }	
 
 			  </script>
 
@@ -258,7 +176,7 @@
 
 		        <div class="right-form">
 		          <a name="exit" type="button" value="Cancelar" href="chart.html" class="next action-button next_btn">Cancelar</a>
-		          <input class="next action-button" id="next_btn" name="next" type="button" value="Siguiente" onclick="input(); nextStep()">
+		            <input class="next action-button" name="next" type="button" value="Siguiente" onclick="input()">
 		        </div>
 
 
@@ -569,6 +487,8 @@
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 <script src="js/chars.js"></script>
 <script src="js/chart.js"></script>
+<script src="js/ms.js"></script>
+
 
 </body>
 </html>
