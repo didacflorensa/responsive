@@ -22,8 +22,9 @@
 
 		<nav class="cd-nav">
 			<ul class="cd-top-nav">
-				<li><a href="createsession.html">New</a></li>
+				<li><a href="crearSession.html">New</a></li>
 				<li><a href="#0">Dashboard</a></li>
+                <li><a href="contact.html">Contact</a></li>                
 				<li class="has-children account">
 					<a href="#0">
 						<!--<img src="img/cd-avatar.png" alt="avatar"> -->
@@ -60,11 +61,11 @@
 					<a href="#0">Settings</a>
 					<ul>
 						<li><a href="user-params.html">User</a></li>
-						<li><a href="#0">Farm</a></li>
-						<li><a href="#0">Production</a></li>
-						<li><a href="#0">Censo</a></li>
-						<li><a href="#0">Price</a></li>
-						<li><a href="#0">Productividad</a></li>
+                        <li><a href="farm-params.html">Farm</a></li>
+                        <li><a href="produccion-params.html">Production</a></li>
+						<li><a href="censo-params.html">Censo</a></li>
+                        <li><a href="precio-params.html">Price</a></li>
+                        <li><a href="productividad-params.html">Productividad</a></li>
 					</ul>
 				</li><li class="has-children summary">
 					<a href="#0">Summary</a>
@@ -83,7 +84,7 @@
 					</ul> -->
 				</li>
 				<li class="has-children users">
-					<a href="#0">Pdf</a>
+                <a href="pdf.html">Pdf</a>
 				</li>
 			</ul>
 		</nav>
@@ -91,7 +92,7 @@
 		 <div class="container-fluid content-wrapper">
 			<h1>Responsive Table (Tablet, Mobile, PC)</h1>
 			
-		 	 <div class="container-fluid content-wrapper">
+		 	 <div class="container-fluid content-wrapper nav-is-visible2">
                 <div class="row">
                     <div class="col-lg-12">
                            
@@ -107,13 +108,13 @@
             </tr>
         </thead>
         <tfoot>
-            <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
+            <tr class="hideTablefoot">
+                <th scope="col">Name</th>
+                <th scope="col">Position</th>
+                <th scope="col">Office</th>
+                <th scope="col">Age</th>
+                <th scope="col">Start date</th>
+                <th scope="col">Salary</th>
             </tr>
         </tfoot>
         <tbody>

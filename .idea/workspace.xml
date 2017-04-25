@@ -1,7 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de1caa80-e65c-454a-ab1b-3dfbe6a7b428" name="Default" comment="" />
+    <list default="true" id="de1caa80-e65c-454a-ab1b-3dfbe6a7b428" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/bower_components/chart.js/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/LICENSE.md" afterPath="$PROJECT_DIR$/bower_components/chart.js/LICENSE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/MAINTAINING.md" afterPath="$PROJECT_DIR$/bower_components/chart.js/MAINTAINING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/README.md" afterPath="$PROJECT_DIR$/bower_components/chart.js/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/_bower.json" afterPath="$PROJECT_DIR$/bower_components/chart.js/_bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/_editorconfig" afterPath="$PROJECT_DIR$/bower_components/chart.js/_editorconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/_eslintignore" afterPath="$PROJECT_DIR$/bower_components/chart.js/_eslintignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/_eslintrc" afterPath="$PROJECT_DIR$/bower_components/chart.js/_eslintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/bower.json" afterPath="$PROJECT_DIR$/bower_components/chart.js/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/composer.json" afterPath="$PROJECT_DIR$/bower_components/chart.js/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/config.jshintrc" afterPath="$PROJECT_DIR$/bower_components/chart.js/config.jshintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/dist/Chart.bundle.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/dist/Chart.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/dist/Chart.bundle.min.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/dist/Chart.bundle.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/dist/Chart.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/dist/Chart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/dist/Chart.min.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/dist/Chart.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/docs/00-Getting-Started.md" afterPath="$PROJECT_DIR$/bower_components/chart.js/docs/00-Getting-Started.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/docs/01-Chart-Configuration.md" afterPath="$PROJECT_DIR$/bower_components/chart.js/docs/01-Chart-Configuration.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/docs/02-Scales.md" afterPath="$PROJECT_DIR$/bower_components/chart.js/docs/02-Scales.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/docs/03-Line-Chart.md" afterPath="$PROJECT_DIR$/bower_components/chart.js/docs/03-Line-Chart.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/docs/04-Bar-Chart.md" afterPath="$PROJECT_DIR$/bower_components/chart.js/docs/04-Bar-Chart.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/docs/05-Radar-Chart.md" afterPath="$PROJECT_DIR$/bower_components/chart.js/docs/05-Radar-Chart.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/docs/06-Polar-Area-Chart.md" afterPath="$PROJECT_DIR$/bower_components/chart.js/docs/06-Polar-Area-Chart.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/docs/07-Pie-Doughnut-Chart.md" afterPath="$PROJECT_DIR$/bower_components/chart.js/docs/07-Pie-Doughnut-Chart.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/docs/08-Bubble-Chart.md" afterPath="$PROJECT_DIR$/bower_components/chart.js/docs/08-Bubble-Chart.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/docs/09-Advanced.md" afterPath="$PROJECT_DIR$/bower_components/chart.js/docs/09-Advanced.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/docs/10-Notes.md" afterPath="$PROJECT_DIR$/bower_components/chart.js/docs/10-Notes.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/gulpfile.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/karma.conf.ci.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/karma.conf.ci.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/karma.conf.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/karma.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/karma.coverage.conf.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/karma.coverage.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/package.json" afterPath="$PROJECT_DIR$/bower_components/chart.js/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/animation/progress-bar.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/animation/progress-bar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/bar/bar-horizontal.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/bar/bar-horizontal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/bar/bar-multi-axis.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/bar/bar-multi-axis.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/bar/bar-stacked-group.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/bar/bar-stacked-group.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/bar/bar-stacked.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/bar/bar-stacked.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/bar/bar.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/bar/bar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/bubble.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/bubble.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/combo-bar-line.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/combo-bar-line.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/data_labelling.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/data_labelling.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/doughnut.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/doughnut.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/legend/pointstyle.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/legend/pointstyle.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/legend/positions.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/legend/positions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/line/different-point-sizes.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/line/different-point-sizes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/line/interpolation-modes.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/line/interpolation-modes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/line/line-multi-axis.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/line/line-multi-axis.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/line/line-skip-points.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/line/line-skip-points.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/line/line-stacked-area.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/line/line-stacked-area.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/line/line-stepped.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/line/line-stepped.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/line/line-styles.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/line/line-styles.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/line/line.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/line/line.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/line/point-styles.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/line/point-styles.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/pie.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/pie.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/polar-area.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/polar-area.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/radar/radar-skip-points.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/radar/radar-skip-points.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/radar/radar.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/radar/radar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/display-settings.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/display-settings.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/filtering-labels.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/filtering-labels.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/gridlines.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/gridlines.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/line-non-numeric-y.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/line-non-numeric-y.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/linear/min-max-settings.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/linear/min-max-settings.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/linear/step-size.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/linear/step-size.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/linear/suggested-min-max-settings.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/linear/suggested-min-max-settings.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/logarithmic/line-logarithmic.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/logarithmic/line-logarithmic.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/logarithmic/scatter-logX.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/logarithmic/scatter-logX.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/multiline-labels.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/multiline-labels.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/time/combo-time-scale.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/time/combo-time-scale.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/time/line-time-point-data.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/time/line-time-point-data.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/time/line-time-scale.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/scales/time/line-time-scale.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/scatter/scatter-multi-axis.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/scatter/scatter-multi-axis.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/scatter/scatter.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/scatter/scatter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/tooltips/dataPoints-customTooltips.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/tooltips/dataPoints-customTooltips.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/tooltips/interaction-modes.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/tooltips/interaction-modes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/tooltips/line-customTooltips.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/tooltips/line-customTooltips.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/tooltips/pie-customTooltips.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/tooltips/pie-customTooltips.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/tooltips/position-modes.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/tooltips/position-modes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/tooltips/tooltip-callbacks.html" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/tooltips/tooltip-callbacks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/samples/utils.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/samples/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/chart.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/chart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/charts/Chart.Bar.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/charts/Chart.Bar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/charts/Chart.Bubble.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/charts/Chart.Bubble.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/charts/Chart.Doughnut.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/charts/Chart.Doughnut.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/charts/Chart.Line.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/charts/Chart.Line.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/charts/Chart.PolarArea.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/charts/Chart.PolarArea.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/charts/Chart.Radar.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/charts/Chart.Radar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/charts/Chart.Scatter.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/charts/Chart.Scatter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/controllers/controller.bar.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/controllers/controller.bar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/controllers/controller.bubble.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/controllers/controller.bubble.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/controllers/controller.doughnut.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/controllers/controller.doughnut.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/controllers/controller.line.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/controllers/controller.line.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/controllers/controller.polarArea.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/controllers/controller.polarArea.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/controllers/controller.radar.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/controllers/controller.radar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.animation.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.animation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.canvasHelpers.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.canvasHelpers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.controller.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.datasetController.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.datasetController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.element.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.element.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.helpers.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.helpers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.interaction.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.interaction.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.layoutService.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.layoutService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.legend.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.legend.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.plugin.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.plugin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.scale.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.scale.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.scaleService.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.scaleService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.ticks.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.ticks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.title.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.title.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.tooltip.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/core/core.tooltip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/elements/element.arc.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/elements/element.arc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/elements/element.line.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/elements/element.line.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/elements/element.point.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/elements/element.point.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/elements/element.rectangle.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/elements/element.rectangle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/platforms/platform.dom.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/platforms/platform.dom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/platforms/platform.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/platforms/platform.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/scales/scale.category.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/scales/scale.category.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/scales/scale.linear.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/scales/scale.linear.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/scales/scale.linearbase.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/scales/scale.linearbase.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/scales/scale.logarithmic.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/scales/scale.logarithmic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/scales/scale.radialLinear.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/scales/scale.radialLinear.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/src/scales/scale.time.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/src/scales/scale.time.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/controller.bar.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/controller.bar.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/controller.bubble.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/controller.bubble.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/controller.doughnut.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/controller.doughnut.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/controller.line.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/controller.line.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/controller.polarArea.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/controller.polarArea.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/controller.radar.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/controller.radar.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/core.controller.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/core.controller.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/core.datasetController.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/core.datasetController.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/core.element.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/core.element.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/core.helpers.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/core.helpers.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/core.interaction.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/core.interaction.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/core.layoutService.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/core.layoutService.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/core.legend.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/core.legend.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/core.plugin.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/core.plugin.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/core.scaleService.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/core.scaleService.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/core.title.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/core.title.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/core.tooltip.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/core.tooltip.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/defaultConfig.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/defaultConfig.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/element.arc.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/element.arc.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/element.line.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/element.line.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/element.point.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/element.point.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/element.rectangle.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/element.rectangle.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/mockContext.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/mockContext.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/platform.dom.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/platform.dom.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/scale.category.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/scale.category.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/scale.linear.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/scale.linear.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/scale.logarithmic.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/scale.logarithmic.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/scale.radialLinear.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/scale.radialLinear.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/test/scale.time.tests.js" afterPath="$PROJECT_DIR$/bower_components/chart.js/test/scale.time.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/chart.js/thankyou.md" afterPath="$PROJECT_DIR$/bower_components/chart.js/thankyou.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/censo-params.html" afterPath="$PROJECT_DIR$/censo-params.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chart.html" afterPath="$PROJECT_DIR$/chart.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.html" afterPath="$PROJECT_DIR$/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crearSession.html" afterPath="$PROJECT_DIR$/crearSession.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/reset.css" afterPath="$PROJECT_DIR$/css/reset.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/farm-params.html" afterPath="$PROJECT_DIR$/farm-params.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/cd-nav-icons.svg" afterPath="$PROJECT_DIR$/img/cd-nav-icons.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/cd-search.svg" afterPath="$PROJECT_DIR$/img/cd-search.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/epig-logo.svg" afterPath="$PROJECT_DIR$/img/epig-logo.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/epig2-logo.svg" afterPath="$PROJECT_DIR$/img/epig2-logo.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/README-menu-aim.md" afterPath="$PROJECT_DIR$/js/README-menu-aim.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/chars.js" afterPath="$PROJECT_DIR$/js/chars.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/chart.js" afterPath="$PROJECT_DIR$/js/chart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery-2.1.4.js" afterPath="$PROJECT_DIR$/js/jquery-2.1.4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery.menu-aim.js" afterPath="$PROJECT_DIR$/js/jquery.menu-aim.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modernizr.js" afterPath="$PROJECT_DIR$/js/modernizr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/table.js" afterPath="$PROJECT_DIR$/js/table.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdf.html" afterPath="$PROJECT_DIR$/pdf.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/precio-params.html" afterPath="$PROJECT_DIR$/precio-params.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/produccion-params.html" afterPath="$PROJECT_DIR$/produccion-params.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/table.html" afterPath="$PROJECT_DIR$/table.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user-params.html" afterPath="$PROJECT_DIR$/user-params.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewParams.html" afterPath="$PROJECT_DIR$/viewParams.html" />
+    </list>
     <ignored path="responsive.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -21,61 +199,114 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="chart.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chart.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="table.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/table.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1260">
-              <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createsession.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/createsession.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="106" column="14" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="751" column="0" selection-start-line="751" selection-start-column="0" selection-end-line="751" selection-end-column="0" />
+            <state relative-caret-position="20295">
+              <caret line="1353" column="4" selection-start-line="1353" selection-start-column="4" selection-end-line="1353" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reset.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/reset.css">
+      <file leaf-file-name="crearSession.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/crearSession.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <state relative-caret-position="1106">
+              <caret line="178" column="115" selection-start-line="178" selection-start-column="115" selection-end-line="178" selection-end-column="115" />
+              <folding>
+                <element signature="n#style#0;n#label#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#div#2;n#fieldset#0;n#form#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1493144146000" expanded="true" signature="3943:3987" ph="..." />
+                <marker date="1493144146000" expanded="true" signature="4082:4126" ph="..." />
+                <marker date="1493144146000" expanded="true" signature="4224:4268" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ms.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/ms.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chart.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/chart.js">
+      <file leaf-file-name="user-params.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-params.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="1815">
+              <caret line="121" column="57" selection-start-line="121" selection-start-column="57" selection-end-line="121" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="795">
+              <caret line="53" column="68" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="68" />
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="productividad-params.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/productividad-params.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2145">
+              <caret line="143" column="42" selection-start-line="143" selection-start-column="42" selection-end-line="143" selection-end-column="42" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#label#0;n#form#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#1;n#form#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="farm-params.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/farm-params.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1410">
+              <caret line="94" column="47" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="precio-params.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/precio-params.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2295">
+              <caret line="153" column="49" selection-start-line="153" selection-start-column="49" selection-end-line="153" selection-end-column="49" />
+              <folding>
+                <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24720">
+              <caret line="1648" column="9" selection-start-line="1648" selection-start-column="9" selection-end-line="1648" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -90,6 +321,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -100,10 +334,18 @@
       <list>
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/chart.html" />
-        <option value="$PROJECT_DIR$/table.html" />
-        <option value="$PROJECT_DIR$/createsession.html" />
         <option value="$PROJECT_DIR$/css/reset.css" />
+        <option value="$PROJECT_DIR$/createsession.html" />
+        <option value="$PROJECT_DIR$/precio-params.html" />
+        <option value="$PROJECT_DIR$/productividad-params.html" />
+        <option value="$PROJECT_DIR$/table.html" />
+        <option value="$PROJECT_DIR$/farm-params.html" />
+        <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/register.html" />
+        <option value="$PROJECT_DIR$/user-params.html" />
+        <option value="$PROJECT_DIR$/js/ms.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/crearSession.html" />
       </list>
     </option>
   </component>
@@ -142,29 +384,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="responsive" />
+              <option name="myItemId" value="responsive_github" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="responsive" />
+              <option name="myItemId" value="responsive_github" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="responsive" />
+              <option name="myItemId" value="responsive_github" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="responsive_github" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="responsive_github" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -180,6 +436,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Didac/Desktop/responsive_github/register.html" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -632,11 +889,20 @@
       <workItem from="1491052978782" duration="903000" />
       <workItem from="1491055961818" duration="1880000" />
       <workItem from="1491247110832" duration="2332000" />
+      <workItem from="1491329766328" duration="206000" />
+      <workItem from="1492606841337" duration="165000" />
+      <workItem from="1492710355900" duration="2806000" />
+      <workItem from="1493031833068" duration="691000" />
+      <workItem from="1493055805681" duration="2471000" />
+      <workItem from="1493114197293" duration="722000" />
+      <workItem from="1493115981213" duration="1246000" />
+      <workItem from="1493119475477" duration="4021000" />
+      <workItem from="1493146882540" duration="5000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5115000" />
+    <option name="totallyTimeSpent" value="17448000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -648,18 +914,18 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4410959" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18820679" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24878837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -683,8 +949,55 @@
     <breakpoint-manager />
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chart.html">
+    <entry file="file://$PROJECT_DIR$/crearSession.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/productividad-params.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2145">
+          <caret line="143" column="42" selection-start-line="143" selection-start-column="42" selection-end-line="143" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#label#0;n#form#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#1;n#form#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/precio-params.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="153" column="49" selection-start-line="153" selection-start-column="49" selection-end-line="153" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24720">
+          <caret line="1648" column="9" selection-start-line="1648" selection-start-column="9" selection-end-line="1648" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/chart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -694,9 +1007,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1140">
+          <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -704,7 +1016,126 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18630">
+          <caret line="1242" column="21" selection-start-line="1242" selection-start-column="21" selection-end-line="1242" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/createsession.html" />
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11100">
+          <caret line="740" column="22" selection-start-line="740" selection-start-column="22" selection-end-line="740" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/createsession.html" />
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -712,7 +1143,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="16" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -720,7 +1150,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -743,7 +1172,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -758,7 +1186,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4233">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,7 +1193,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1383">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,7 +1200,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -782,7 +1207,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="16" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -794,43 +1218,118 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/createsession.html" />
+    <entry file="file://$PROJECT_DIR$/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24720">
+          <caret line="1648" column="9" selection-start-line="1648" selection-start-column="9" selection-end-line="1648" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/precio-params.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="153" column="49" selection-start-line="153" selection-start-column="49" selection-end-line="153" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/table.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1260">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-          <folding />
+        <state relative-caret-position="297">
+          <caret line="94" column="72" selection-start-line="94" selection-start-column="72" selection-end-line="94" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
+        <state relative-caret-position="-192">
+          <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/farm-params.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="94" column="47" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/createsession.html">
+    <entry file="file://$PROJECT_DIR$/productividad-params.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="106" column="14" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
+        <state relative-caret-position="2145">
+          <caret line="143" column="42" selection-start-line="143" selection-start-column="42" selection-end-line="143" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#label#0;n#form#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#1;n#form#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/reset.css">
+    <entry file="file://$PROJECT_DIR$/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="795">
+          <caret line="53" column="68" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="68" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-params.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1815">
+          <caret line="121" column="57" selection-start-line="121" selection-start-column="57" selection-end-line="121" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="751" column="0" selection-start-line="751" selection-start-column="0" selection-end-line="751" selection-end-column="0" />
+        <state relative-caret-position="20295">
+          <caret line="1353" column="4" selection-start-line="1353" selection-start-column="4" selection-end-line="1353" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crearSession.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1106">
+          <caret line="178" column="115" selection-start-line="178" selection-start-column="115" selection-end-line="178" selection-end-column="115" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#2;n#fieldset#0;n#form#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1493144146000" expanded="true" signature="3943:3987" ph="..." />
+            <marker date="1493144146000" expanded="true" signature="4082:4126" ph="..." />
+            <marker date="1493144146000" expanded="true" signature="4224:4268" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

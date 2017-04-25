@@ -25,7 +25,7 @@ a {
   text-decoration: none; }
 
 p {
-  padding: 2em 0;
+  padding: 1em 0;
   line-height: 1.8; }
 
 input {
@@ -77,8 +77,8 @@ Main Page Content
       -moz-transform: translateX(200px);
       -ms-transform: translateX(200px);
       -o-transform: translateX(200px);
-      transform: translateX(200px);
-      width: calc(100% - 200px); }
+      transform: translateX(100px);
+      width: calc(100% - 100px); }
 
     .cd-main-content .content-wrapper h1 {
       padding: 1em 0;
@@ -745,7 +745,7 @@ input:focus, textarea:focus {
   #form-div{
     left: 3%;
     margin-right: 3%;
-    width: 88%;
+    width: 85%;
     margin-left: 0;
     padding-left: 3%;
     padding-right: 3%;
@@ -996,7 +996,7 @@ body {
 
 /*progressbar*/
 #progressbar {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   overflow: hidden;
   /*CSS counters to number the steps*/
   counter-reset: step;
@@ -1086,7 +1086,7 @@ select{
   color:#8a97a0;
   -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display:inline;
 }
 
@@ -1135,32 +1135,61 @@ select{
 
 
 #msform .createSession {
-  width: 88%;
+  width: 85%;
   display:inline;
 
 }
 
 #msform .createSession2 {
-  width: 43.5%;
+  width: 43%;
   display:inline;
 }
 
 #msform .double-input  {
-  width:43.5%;
+  width:42.9%;
+  border-right-width: 1px;
+  display: inline;
+}
+
+#msform .double-input-responsive  {
+  width:42.9%;
   border-right-width: 1px;
   display: inline;
 }
 
 #msform .triple-input  {
-  width:28.7%;
+  width:28.1%;
+  border-right-width: 1px;
+  display: inline;
+}
+
+#msform .triple-input-responsive  {
+  width:28.1%;
   border-right-width: 1px;
   display: inline;
 }
 
 #msform .four-input  {
-  width:21.2%;
+  width:20.6%;
   border-right-width: 1px;
   display: inline;
+}
+
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+  #msform .four-input  {
+    width:48.6%;
+  }
+
+  #msform .double-input-responsive  {
+    width:50%;
+  }
+
+  #msform .triple-input-responsive  {
+    width:50%;
+  }
 }
 
 
@@ -1195,7 +1224,7 @@ select{
 }
 #msform input[type='file']:before {
   content: "drag & drop your files ";
-  display: block;
+  display: none;
   position: absolute;
   text-align: center;
   top: 50%;
@@ -1211,15 +1240,24 @@ select{
 #msform .selectandaddInput {
   width: 90%;
   display:inline;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
+
+#msform .hideName{
+	visibility: hidden;
+}
+
+#msform .hideLongName {
+	visibility: visible;
+}
+
 
 /* End Create Session*/
 @media
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
   #msform {
-    width: 350px;
+    width: 320px;
     margin: 5px;
   }
   #msform fieldset{
@@ -1231,7 +1269,7 @@ only screen and (max-width: 760px),
     box-sizing: border-box;
     width: 100%;
     margin: 0 1px;
-    margin-top: 55px;
+    margin-top: 25px;
 
     /*stacking fieldsets above each other*/
     position: relative;
@@ -1244,21 +1282,21 @@ only screen and (max-width: 760px),
     /*CSS counters to number the steps*/
     counter-reset: step;
     margin-top: 50px;
-    display: none;
+    display: block;
   }
   #progressbar li {
     list-style-type: none;
     color: black;
     text-transform: uppercase;
     font-size: 9px;
-    width:100%;
+    width:30%;
     float: left;
     position: relative;
   }
   #progressbar li:before {
     content: counter(step);
     counter-increment: step;
-    width: 100%;
+    width: 25%;
     line-height: 20px;
     display: block;
     font-size: 10px;
@@ -1277,6 +1315,7 @@ only screen and (max-width: 760px),
     left: -50%;
     top: 9px;
     z-index: -1; /*put it behind the numbers*/
+    display: none;
   }
   #progressbar li:first-child:after {
     /*connector not needed before the first step*/
@@ -1302,6 +1341,20 @@ only screen and (max-width: 760px),
   #msform .selectandaddInput {
     width: 80%;
   }
+
+	#msform .hideName{
+		visibility: visible;
+	}
+
+	#msform .hideLongName {
+		visibility: hidden;
+	}
+
+  #msform .action-button {
+    margin-right: 35%;
+  }
+
+
 }
 
 
@@ -1328,3 +1381,382 @@ only screen and (max-width: 760px),
     height: 760px;
   }
 }
+
+.hideTablefoot {
+display: block;
+}
+
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	.hideTablefoot {
+		display: none;
+	}
+
+}
+
+.input_responsive_width4 {
+  width: 25%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+}
+
+.input_responsive_width2 {
+  width: 33.33333333%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+}
+
+.input_responsive_width3 {
+  width: 50%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+}
+
+.input_responsive_width_intervalo {
+  width: 33.33333333%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+}
+
+.input_responsive_width_destetados1 {
+  width: 25%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+}
+
+.input_responsive_width_destetados2 {
+  width: 32%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+}
+
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+  .input_responsive_width4 {
+    width: 50%;
+  }
+
+  .input_responsive_width2 {
+    width: 60%;
+  }
+
+  .input_responsive_width3 {
+    width: 83%;
+  }
+  .input_responsive_width_intervalo {
+    width: 63%;
+  }
+
+  .input_responsive_width_destetados1 {
+    width: 70%;
+  }
+
+  .input_responsive_width_destetados2 {
+    width: 70%;
+  }
+
+}
+
+/*Start Login */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+  background: white;
+  margin-top: 40px;
+}
+
+.login {
+  border-radius: 2px 2px 5px 5px;
+  padding: 10px 20px 20px 20px;
+  width: 100%;
+  max-width: 400px;
+  background: #ebebeb;
+  position: relative;
+  padding-bottom: 80px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  border: 1px solid #cbc9c9;
+}
+
+
+.login input {
+  display: block;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  transition: border-width 0.2s ease;
+  border-radius: 2px;
+  color: #ccc;
+}
+
+
+.login a {
+  font-size: 0.8em;
+  color: #2196F3;
+  text-decoration: none;
+}
+
+.login button {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+  background: #2196F3;
+  color: #fff;
+  display: block;
+  border: none;
+  margin-top: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-height: 60px;
+  border-radius: 0 0 2px 2px;
+  transform: rotateZ(0deg);
+  transition: all 0.1s ease-out;
+  border-bottom-width: 7px;
+}
+
+.login input {
+  display: block;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  transition: border-width 0.2s ease;
+  border-radius: 2px;
+  color: #ccc;
+}
+.login input + i.fa {
+  color: #fff;
+  font-size: 1em;
+  position: absolute;
+  margin-top: -47px;
+  opacity: 0;
+  left: 0;
+  transition: all 0.1s ease-in;
+}
+.login input:focus {
+  outline: none;
+  color: #444;
+  border-color: #2196F3;
+  border-left-width: 35px;
+}
+.login input:focus + i.fa {
+  opacity: 1;
+  left: 30px;
+  transition: all 0.25s ease-out;
+}
+
+
+/*End Login*/
+
+/* Start Register */
+
+.register body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  padding:0;
+  margin:0;}
+
+.register  fieldset, img {border:0}
+
+.register  ol, ul, li {list-style:none}
+
+.register  :focus {outline:none}
+
+.register  body,
+input,
+textarea,
+select {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #4c4c4c;
+}
+
+.register  p {
+  font-size: 12px;
+  width: 150px;
+  display: inline-block;
+  margin-left: 18px;
+}
+.register  h1 {
+  font-size: 32px;
+  font-weight: 300;
+  color: #4c4c4c;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.register  html{
+  background-color: #ffffff;
+}
+
+.register {
+  margin: 20px auto;
+  width: 343px;
+  height: 464px;
+  -webkit-border-radius: 8px/7px;
+  -moz-border-radius: 8px/7px;
+  border-radius: 8px/7px;
+  background-color: #ebebeb;
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+  box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+  border: solid 1px #cbc9c9;
+}
+
+.register input[type=radio] {
+  visibility: hidden;
+}
+
+.register form{
+  margin: 0 30px;
+}
+
+.register  label.radio {
+  cursor: pointer;
+  text-indent: 35px;
+  overflow: visible;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.register  label.radio:before {
+  background: #2196F3;
+  content:'';
+  position: absolute;
+  top:2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.register  label.radio:after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 0.8em;
+  height: 0.5em;
+  background: transparent;
+  top: 7px;
+  left: 4.5px;
+  border: 3px solid #ffffff;
+  border-top: none;
+  border-right: none;
+
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.register  input[type=radio]:checked + label:after {
+  opacity: 1;
+}
+
+.register  hr{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid #2196F3;
+}
+
+.register  input[type=text], .register input[type=password]{
+  width: 200px;
+  height: 39px;
+  -webkit-border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
+  -moz-border-radius: 0px 4px 4px 0px/0px 0px 4px 4px;
+  border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+  box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+  border: solid 1px #cbc9c9;
+  margin-left: -5px;
+  margin-top: 13px;
+  padding-left: 10px;
+  display:inline-block;
+}
+
+.register #icon {
+  display: inline-block;
+  width: 30px;
+  background-color: #2196F3;
+  padding: 9px 0px 8px 9px;
+  margin-left: 15px;
+  -webkit-border-radius: 4px 0px 0px 4px;
+  -moz-border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0px 0px 4px;
+  color: white;
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+  box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+  border: solid 0px #cbc9c9;
+}
+
+.register .accounttype{
+  margin-left: 8px;
+  margin-top: 20px;
+}
+
+.register a.button {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  padding: 6px 25px 0px 20px;
+  margin: 10px 8px 20px 0px;
+  display: inline-block;
+  float: right;
+  text-decoration: none;
+  width: 50px; height: 27px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #2196F3;
+  -webkit-box-shadow: 0 3px #2196F3;
+  -moz-box-shadow: 0 3px #2196F3;
+  box-shadow: 0 3px #2196F3;
+  transition: all 0.1s linear 0s;
+  top: 0px;
+  position: relative;
+}
+
+.register  a.button:hover {
+  top: 3px;
+  background-color:#2e458b;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+}
+
+/*End Register*/

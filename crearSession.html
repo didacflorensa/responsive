@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
     <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap style -->
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -67,7 +68,7 @@
 						<li><a href="produccion-params.html">Production</a></li>
 						<li><a href="censo-params.html">Censo</a></li>
                         <li><a href="precio-params.html">Price</a></li>
-						<li><a href="#0">Productividad</a></li>
+                        <li><a href="productividad-params.html">Productividad</a></li>
 					</ul>                
             </li><li class="has-children summary">
             <a href="#0">Summary</a>
@@ -142,26 +143,26 @@
 		      <fieldset>
 
 		        <div class="col-xs-12">
-		          <label for="select_farm"><p>Elige una granja</p></label>
+		          <label for="select_farm" style="margin-bottom: 1px">Elige una granja</label>
 		          <div class="selectandadd">
 		            <select class="selectandadd" id="select_farm" name="select_farm"></select>
 		            <button id="addFarm" type="submit" class="add-button">&#x271A;</button>
 		          </div>
 		        </div>
 		        <div class="col-xs-12" id="add_newFarmForm">
-		          <label for="newFarm"> <p>Nombre de la granja</p></label>
+		          <label for="newFarm"> Nombre de la granja</label>
 		          <div class="selectandadd">
-		            <input class="selectandaddInput" id="newFarm" name="newFarm" type="text" class="selectandadd">
+		            <input class="selectandaddInput" id="newFarm" name="newFarm" type="text">
 		            <button type="submit" class="add-button" id="storeFarm" >&#10003;</button>
 		          </div>
 		        </div>
 
 
 		        <div class="col-xs-12">
-		          <label for="calibration"><p>Elige operacion</p></label>
-		          <select class="options" id="calibration" name="calibration">
-		            <option value="calibracion" id="calibracion"><p>Calibración<p></option>
-		            <option value="simulacion" id="simulacion"><p>Simulación</p></option>
+		          <label for="calibration">Elige operacion</label>
+		          <select class="options" id="calibration" name="calibration" style="margin-bottom: 20px">
+		            <option value="calibracion" id="calibracion">Calibración</option>
+		            <option value="simulacion" id="simulacion">Simulación</option>
 		          </select>
 		        </div>
 
@@ -175,7 +176,7 @@
 
 
 		        <div class="right-form">
-		          <a name="exit" type="button" value="Cancelar" href="chart.html" class="next action-button next_btn">Cancelar</a>
+					<input name="exit" type="button" href="chart.html" value="Cancelar" class="exit action-button">
 		            <input class="next action-button" name="next" type="button" value="Siguiente" onclick="input()">
 		        </div>
 
@@ -187,7 +188,7 @@
 		        <fieldset>
 		          <!-- Número máximo de ciclos reproductivos -->
 		          <div class="col-xs-12">
-		            <label for="num_ciclos">{{"maximoCiclos"|translate}}  </label>
+		            <label for="num_ciclos">Maximo ciclos </label>
 		            <div>
 		              <input class="createSession" id="num_ciclos" name="num_ciclos" type="number" min="1" max="12" value="12">
 		              <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
@@ -195,7 +196,7 @@
 		          </div>
 		          <!-- Mínimo y máximo número de cubriciones -->
 		          <div class="col-xs-12">
-		          <label for="select_farm">{{"minMaxCubriciones"|translate}}</label>
+		          <label for="select_farm">Mínimo y máximo de cubriciones </label>
 		          <div>
 		            <input class="createSession2" id="minCubriciones" name="minCubriciones" type="number" min="1" max="5" value="1">
 		            <input class="createSession2" id="maxCubriciones" name="maxCubriciones" type="number" min="1" max="5" value="1">
@@ -204,7 +205,7 @@
 		            </div>
 		          <!-- Mínimo y máximo de semanas de lactación  -->
 		          <div class="col-xs-12">
-		          <label for="select_farm"> {{"minMaxSemLactacion"|translate}} </label>
+		          <label for="select_farm"> Mínimas y máximas semanas de lactación </label>
 		          <div>
 		            <input class="createSession2" id="minLactacion" name="minLactacion" type="number" value="4" min="1" max="6">
 		            <input class="createSession2" id="maxLactacion" name="maxLactacion" type="number" value="4" min="1" max="6">
@@ -224,7 +225,7 @@
 
 		          <!-- Tiempo medio de permanencia en granja de las cerdas en los últimos 5 años-->
 		          <div class="col-xs-12">
-		            <label for="tiempo_med">{{"tiempoPermanenciaGranja"|translate}} </label>
+		            <label for="tiempo_med">Tiempo de permanencia en la granja</label>
 		            <div>
 		              <input  class="createSession" id="tiempo_med" name="tiempo_med" value="3,21">
 		              <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
@@ -233,7 +234,7 @@
 
 		          <!-- % Reposición Actual -->
 		          <div class="col-xs-12">
-		            <label for="reposicion">{{"reposicionActual"|translate}}</label>
+		            <label for="reposicion">Reposición actual</label>
 		            <div>
 		              <input  class="createSession" id="reposicion" name="reposicion" value="31" min="0" max="100">
 		              <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
@@ -242,7 +243,7 @@
 
 		          <!-- Historial de cerdas no presentes en los últimos 5 años con su producción de nacidos vivos por ciclo  -->
 		          <div class="col-xs-12">
-		            <label> {{"historialCerdasCiclo"|translate}} </label>
+		            <label> Historial de cerdas por ciclo</label>
 		            <div>
 		              <input class="createSession" type="file" name="historial_cerdas" />
 		              <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
@@ -251,7 +252,7 @@
 
 		          <!-- Historial de cerdas presentes con su producción de nacidos vivos por ciclo  -->
 		          <div class="col-xs-12">
-		            <label> {{"historialCerdasPresentesCiclo" | translate}} </label>
+		            <label>Historial de cerdas presentes por ciclo </label>
 		            <div>
 		              <input class="createSession" type="file" name="historial_cerdas_presentes" />
 		              <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
@@ -260,7 +261,7 @@
 
 		          <!-- % Cerdas presentes por ciclo  -->
 		          <div class="col-xs-12">
-		            <label for="cerdas_ciclo">{{"cerdasPorCiclo" | translate}} </label>
+		            <label for="cerdas_ciclo">Cerdas por ciclo </label>
 		            <div>
 		              <div class="col-xs-12" id="cerdas_ciclo" name="cerdas_ciclo">
 		              </div>
@@ -282,7 +283,7 @@
 
 		          <!-- Inseminación (Kg/dia)-->
 		          <div class="col-xs-12">
-		            <label for="inseminación"> {{"inseminacionKgDia"|translate}}  </label>
+		            <label for="inseminación"> Inseminación / kg dia</label>
 		            <div>
 		              <input class="createSession" id="inseminación" name="inseminación" type="number" min="1" max="5" value="3,75">
 		              <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
@@ -291,7 +292,7 @@
 
 		          <!-- Gestación 2-3 días antes del parto (Kg/dia) -->
 		          <div class="col-xs-12">
-		            <label for="antesParto"> {{"gestacionAntesParto"|translate}}  </label>
+		            <label for="antesParto"> Gestación antes del parto  </label>
 		            <div>
 		              <input class="createSession" id="antesParto" name="antesParto" type="number" min="1" max="5" value="2,25">
 
@@ -301,28 +302,28 @@
 
 		          <!-- Gestación (kg/dia) -->
 		          <div class="col-xs-12">
-		            <label> {{"gestacionKgDia"|translate}}  </label>
-		            <div class='full-input triple-input custom-input'><label>{{"set14"|translate}}</label>
+		            <label class="col-xs-12"> GEstación / kg dia  </label>
+		            <div class='full-input triple-input custom-input'><label>Set 1-4</label>
 		              <input clas="triple-input custom-input" type='number' name='gest1-4' id="gest1-4" value="2"></div>
 
-		            <div class='full-input triple-input custom-input'><label>{{"set512"|translate}}</label>
+		            <div class='full-input triple-input custom-input'><label>Set 5-12</label>
 		              <input clas="triple-input custom-input" type='number' name='gest5-12' id="gest5-12" value="2"></div>
 
-		            <div class='full-input triple-input custom-input' ><label>{{"set1316"|translate}}</label>
+		            <div class='full-input triple-input custom-input' ><label>Set 13-16</label>
 		              <input clas="triple-input custom-input" type='number' name='gest13-16' id="gest13-16" value="3"></div>
 		            <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
 		          </div>
 
 		          <!-- Lechón (Kg/dia)  -->
 		          <div class="col-xs-12">
-		            <label> {{"lechonKgDia"|translate}}  </label>
-		            <div class='full-input triple-input custom-input'><label>{{"set3"|translate}}</label>
+		            <label class="col-xs-12"> Lechon / kg dia </label>
+		            <div class='full-input triple-input custom-input'><label>Set. 3</label>
 		              <input clas="triple-input custom-input" type='number' name='lechon3' id="lechon3" value="0,03"></div>
 
-		            <div class='full-input triple-input custom-input'><label>{{"set4"|translate}}</label>
+		            <div class='full-input triple-input custom-input'><label>Set. 4</label>
 		              <input clas="triple-input custom-input" type='number' name='lechon4' id="lechon4" value="0,12"></div>
 
-		            <div class='full-input triple-input custom-input' ><label>{{"set5"|translate}}</label>
+		            <div class='full-input triple-input custom-input' ><label>Set. 5</label>
 		              <input clas="triple-input custom-input" type='number' name='lechon5' id="lechon5" value="0,61"></div>
 		            <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
 		          </div>
@@ -341,7 +342,7 @@
 
 		          <!-- Inseminación artificial (€)-->
 		          <div class="col-xs-12">
-		            <label for="inseminación"> {{"inseminacionArtificial"|translate}}  </label>
+		            <label for="inseminación"> Inseminación artificial </label>
 		            <div>
 		              <input class="createSession" id="inseminacion_artificial" name="inseminacion" type="number">
 		              <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
@@ -350,24 +351,24 @@
 
 		          <!-- Pienso (€/Kg)-->
 		          <div class="col-xs-12">
-		            <label> {{"piensoKg"|translate}}  </label>
-		            <div class='full-input four-input custom-input'><label>{{"cubricion"|translate}}</label>
+		            <label class="col-xs-12"> Pienso/Kg  </label>
+		            <div class='full-input four-input custom-input'><label>Cubrición</label>
 		              <input clas="four-input custom-input" type='number' name='Cubricion' id="Cubricion" value="0,27"></div>
 
-		            <div class='full-input four-input custom-input'><label>{{"gestacion"|translate}}</label>
+		            <div class='full-input four-input custom-input'><label>Gestación</label>
 		              <input clas="four-input custom-input" type='number' name='Gestacion' id="Gestacion" value="0,27"></div>
 
-		            <div class='full-input four-input custom-input' ><label>{{"lactacion"|translate}} </label>
+		            <div class='full-input four-input custom-input' ><label>Lactación </label>
 		              <input clas="four-input" type='number' name='Lactacion' id="Lactacion" value="0,27"></div>
 
-		            <div class='full-input four-input custom-input' ><label>{{"lechones"|translate}} </label>
+		            <div class='full-input four-input custom-input'><label>Lechones </label>
 		              <input clas="four-input custom-input" type='number' name='Lechones' id="Lechones" value="0,40"></div>
 		            <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
 		          </div>
 
 		          <!-- Lechón vendido (€)-->
 		          <div class="col-xs-12">
-		            <label> {{"lechonVendido"|translate}} </label>
+		            <label> Lechon vendido </label>
 		            <div>
 		              <input class="createSession" id="lechon" name="lechon" type="number" value="33,38">
 		              <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
@@ -376,12 +377,12 @@
 
 		          <!-- Cerdas (€)-->
 		          <div class="col-xs-12">
-		            <label> {{"cerdasEuros"|translate}}  </label>
+		            <label class="col-xs-12"> Cerdas/Euro </label>
 
-		            <div class='full-input double-input custom-input'><label>{{"reposicion"|translate}}</label>
+		            <div class='full-input double-input custom-input'><label>Reposicion</label>
 		              <input clas="double-input custom-input" type='number' name='reposicion' id="reposicion_cerda" value="228,42"></div>
 
-		            <div class='full-input double-input custom-input'><label>{{"vendida"|translate}}</label>
+		            <div class='full-input double-input custom-input'><label>Vendida</label>
 		              <input clas="double-input custom-input" type='number' name='vendida' id="vendida" value="0,81"></div>
 
 		            <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
@@ -401,27 +402,27 @@
 		        <fieldset>
 		          <!-- Partos -->
 		          <div class="col-xs-12">
-		            <label> {{"partos"|translate}}  </label>
-		            <div class='full-input double-input custom-input'><label>{{"numMedioAño"|translate}}</label>
-		              <input clas="double-input custom-input" type='number' name='partosMedio' id="partosMedio" value="2,30"></div>
+		            <label class="col-xs-12">Partos </label>
+		            <div class='full-input double-input-responsive custom-input'><label>Número medio año</label>
+		              <input clas="double-input-responsive custom-input" type='number' name='partosMedio' id="partosMedio" value="2,30"></div>
 
-		            <div class='full-input double-input custom-input'><label>{{"intervaloDias"|translate}}</label>
-		              <input clas="double-input custom-input" type='number' name='intervalo' id="intervalo" value="150,51"></div>
+		            <div class='full-input double-input-responsive custom-input'><label>Intervalo de dias</label>
+		              <input clas="double-input-responsive custom-input" type='number' name='intervalo' id="intervalo" value="150,51"></div>
 
 		            <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
 		          </div>
 
 		          <!-- Destete -->
 		          <div class="col-xs-12">
-		            <label> {{"destete"|translate}}  </label>
-		            <div class='full-input triple-input custom-input'><label>{{"destetados"|translate}}  <br> {{"cerdaAño"|translate}}</label>
-		              <input clas="triple-input custom-input" type='number' name='destetados' id="destetados" value="24,13"></div>
+		            <label class="col-xs-12"> Destete </label>
+		            <div class='full-input triple-input-responsive custom-input'><label>Destetados <br> Cerdas al año</label>
+		              <input clas="triple-input-responsive custom-input" type='number' name='destetados' id="destetados" value="24,13"></div>
 
-		            <div class='full-input triple-input custom-input'><label>{{"destetados"|translate}}   <br>  {{"cerda"|translate}}</label>
-		              <input clas="triple-input custom-input" type='number' name='destetados2' id="destetados2" value="55,43"></div>
+		            <div class='full-input triple-input-responsive custom-input'><label>Destetatos   <br>  Cerda</label>
+		              <input clas="triple-input-responsive custom-input" type='number' name='destetados2' id="destetados2" value="55,43"></div>
 
-		            <div class='full-input triple-input custom-input'><label>{{"tamañoMedioCamada"|translate}} </label>
-		              <input clas="triple-input custom-input" type='number' name='destetados3' id="destetados3" value="10,24"></div>
+		            <div class='full-input triple-input-responsive custom-input'><label>Tamaño medio camada </label>
+		              <input clas="triple-input-responsive custom-input" type='number' name='destetados3' id="destetados3" value="10,24"></div>
 
 		            <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
 
@@ -429,7 +430,7 @@
 
 		          <!-- Número medio de camadas (Cerda) -->
 		          <div class="col-xs-12">
-		            <label for="inseminación"> {{"numeroMedioCamadas"|translate}}  </label>
+		            <label for="inseminación"> Número medio camadas  </label>
 		            <div>
 		              <input class="createSession" id="camadas" name="camadas" type="number" min="1" max="5" value="7,78">
 		              <img src="../images/Icons/Parametros/Info.png"  onclick="info_imagen()" height="24" width="24">
@@ -438,7 +439,7 @@
 
 		          <!-- % Ratio de fertilidad (Ciclos) -->
 		          <div class="col-xs-12">
-		            <label>{{"ratioFertilidad"|translate}} </label>
+		            <label>Ratio de fertilidad </label>
 		            <div>
 		              <div class="col-xs-12" id="ratio_fertilidad" name="ratio_fertilidad">
 		              </div>
@@ -447,7 +448,7 @@
 
 		          <!-- % Mortalidad de los lechones en el primer parto (Ciclos)  -->
 		          <div class="col-xs-12">
-		            <label>{{"mortalidadLechonesPrimerParto"|translate}} </label>
+		            <label>Mortalidad de lechones en el primer parto</label>
 		            <div>
 		              <div class="col-xs-12" id="mortalidad_lechones" name="mortalidad_lechones">
 		              </div>
@@ -464,7 +465,7 @@
 
 		        <!-- Ending - User Info -->
 		      <fieldset>
-		        <label>{{"mensajeFinal"|translate}}</label>
+		        <label>Su operación ha sido creada satisfactoriamente. Por favor, tenga paciencia, se estan realizando operaciones con sus datos. Recibirà una notificación cuando las tareas esten completadas. Gracias por usar nuestro servicio.</label>
 		        <!-- Form Buttons -->
 		        <div class="right-form">
 		          <input name="exit" type="button" id="terminar" value="Terminar" ui-sref="home" class="action-button">
