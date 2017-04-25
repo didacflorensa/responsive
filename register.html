@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap style -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+
+    <title>Responsive Sidebar Navigation | CodyHouse</title>
+</head>
+<body>
+<header class="cd-main-header">
+    <a href="#0" class="cd-logo"><img src="img/epig2-logo.svg" alt="Logo"></a>
+
+
+    <nav class="cd-nav">
+        <ul class="cd-top-nav">
+        </ul>
+    </nav>
+</header> <!-- .cd-main-header -->
+
+
+<main class="cd-main-content">
+    <nav class="cd-side-nav">
+    </nav>
+    
+    <div class="container-fluid content-wrapper">
+
+
+        <div class="col-md-6 col-md-offset-3">
+            <div class="register">
+
+                <h1 style="padding: 1em 0">Registro</h1>
+
+                <form name="form" ng-submit="vm.register()" role="form">
+                    <hr>
+                    <div class="accounttype">
+                        <input type="radio" value="None" id="Granjero" name="account" checked/>
+                        <label for="Granjero" class="radio" chec>Granjero</label>
+                        <input type="radio" value="None" id="Gestor" name="account" />
+                        <label for="Gestor" class="radio">Gestor</label>
+                    </div>
+                    <hr>
+
+                    <div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
+                        <label id="icon" for="email"><i class="icon-envelope "></i></label>
+                        <input type="text" name="email" id="email" placeholder="Email" class="form-control" ng-model="vm.user.username" required />
+                        <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Email is required</span>
+                    </div>
+
+                    <div class="form-group" ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+                        <label id="icon" for="password"><i class="icon-key"></i></label>
+                        <input type="password" name="password" id="password" placeholder="Password" class="form-control" ng-model="vm.user.password" required />
+                        <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+                    </div>
+
+                    <div id="g-reCaptcha" class="g-recaptcha"  data-sitekey="6LfVTBUUAAAAALW7AJ1IikDyxLD_m5-J5S6I7-RZ"></div>
+
+                    <br>
+                    <div class="form-actions text-center">
+                        <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-primary">Register</button>
+                        <img ng-if="vm.dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+                        <a href="#/login" class="btn btn-primary">Cancel</a>
+                    </div>
+
+                </form>
+
+                <!--js-->
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    </div>
+
+</main> <!-- .cd-main-content -->
+
+
+</div>
+
+
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery.menu-aim.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/chars.js"></script>
+<script src="js/chart.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="js/register.controller.js"></script>
+</body>
+</html>

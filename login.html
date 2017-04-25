@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+
+    <title>Responsive Sidebar Navigation | CodyHouse</title>
+</head>
+<body>
+<header class="cd-main-header">
+    <a href="#0" class="cd-logo"><img src="img/epig2-logo.svg" alt="Logo"></a>
+
+
+    <nav class="cd-nav">
+        <ul class="cd-top-nav">
+        </ul>
+    </nav>
+</header> <!-- .cd-main-header -->
+
+
+<main class="cd-main-content">
+    <nav class="cd-side-nav">
+    </nav>
+    
+    <div class="container-fluid content-wrapper">
+
+        <div class="wrapper">
+          <div id="sessionlogin">
+            <form class="login" name="login" ng-submit="vm.login()" role="form" novalidate>
+            <h3>
+              Enter to your private area:
+            </h3>
+            <br>
+
+              <input name="email" type="text" placeholder="Email" autofocus ng-model="vm.username" required  />
+              <i class="fa fa-envelope"></i>
+              <span ng-show="form.email.$dirty && form.email.$error.required" class="help-block">Email is required</span>
+
+              <input name="password" type="password" placeholder="Password" ng-model="vm.password" required  />
+              <i class="fa fa-key"></i>
+              <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+
+            <a href="register.html">Register</a>
+            <a href="login.html">Forgot your password?</a>
+
+             <button type="submit"  ng-disabled="form.$invalid" > Log In
+             </button>
+
+          </form>
+</div>
+</div>
+
+
+
+    </div>
+
+</main> <!-- .cd-main-content -->
+
+
+</div>
+
+
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery.menu-aim.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/chars.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/login.controller.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+
+    <title>Responsive Sidebar Navigation | CodyHouse</title>
+</head>
+<body>
+<header class="cd-main-header">
+    <a href="#0" class="cd-logo"><img src="img/epig2-logo.svg" alt="Logo"></a>
+
+    <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+    <nav class="cd-nav">
+        <ul class="cd-top-nav">
+            <li><a href="crearSession.html">New</a></li>
+            <li><a href="#0">Dashboard</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="has-children account">
+                <a href="#0">
+                    <!--<img src="img/cd-avatar.png" alt="avatar"> -->
+                    dflorensa
+                </a>
+
+                <ul>
+
+                    <li><a href="#0">Settings</a></li>
+                    <li><a href="#0">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header> <!-- .cd-main-header -->
+
+
+<main class="cd-main-content">
+    <nav class="cd-side-nav">
+        <ul>
+            <li class="cd-label">Main</li>
+            <li class="has-children charts">
+                <a href="#0">Charts</a>
+                <ul>
+                    <li><a href="chart.html">Charts 1</a></li>
+                    <li><a href="#0">Charts 2</a></li>
+                    <li><a href="#0">Charts 3</a></li>
+                </ul>
+            </li>
+				<li class="has-children ranking">
+					<a href="table.html">Ranking</a>
+				</li>
+            <li class="has-children settings">
+                <a href="#0">Settings</a>
+   					<ul>
+						<li><a href="user-params.html">User</a></li>
+            			<li><a href="farm-params.html">Farm</a></li>
+                        <li><a href="produccion-params.html">Production</a></li>
+		                  <li><a href="censo-params.html">Censo</a></li>
+                        <li><a href="precio-params.html">Price</a></li>
+                        <li><a href="productividad-params.html">Productividad</a></li>
+					</ul>
+            </li><li class="has-children summary">
+            <a href="#0">Summary</a>
+        </li>
+        </ul>
+
+        <ul>
+            <li class="cd-label">Actions</li>
+            <li class="has-children notifications active">
+                <a href="#0">Notifications<span class="count">3</span></a>
+                <!--
+                <ul>
+                    <li><a href="#0">All Notifications</a></li>
+                    <li><a href="#0">Friends</a></li>
+                    <li><a href="#0">Other</a></li>
+                </ul> -->
+            </li>
+            <li class="has-children users">
+                <a href="pdf.html">Pdf</a>
+            </li>
+			<li class="has-children contact">
+				<a href="contact.html">Contact</a>
+			</li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid content-wrapper">
+        
+            
+      <form action="" method="post" class="smart">
+        <h1>Productividad
+          <span></span>
+        </h1>
+        <label>
+          <span style="width: 100%">Número medio de camadas:</span>
+          <input id="camadas" name="camadas" type="number" min="1" max="5" value="7.78" style="width: 33.3333%">
+        </label>
+
+        <label>
+          <span style="width: 100%">Partos</span>
+        </label>
+
+        <div class="input_responsive_width3">
+          <label style="margin-left: 15px">
+            <span>Número medio al año:</span>
+            <input type='number' name='partosMedio' id="partosMedio" value="2.30" style="width: 70%">
+          </label>
+        </div>
+
+        <div class="input_responsive_width_intervalo">
+          <label style="margin-left: 15px">
+            <span>Intervalo/días:</span>
+            <input type='number' name='intervalo' id="intervalo" value="150.51">
+          </label>
+        </div>
+
+        <label>
+          <span style="width: 100%">Destete</span>
+        </label>
+
+        <div class="input_responsive_width_destetados1">
+          <label style="margin-left: 15px">
+            <span>Destetados &nbsp; Cerda/Año:</span>
+            <input type='number' name='destetados' id="destetados" value="24.13">
+          </label>
+        </div>
+
+        <div class="input_responsive_width_destetados1">
+          <label style="margin-left: 15px">
+            <span>Destetados  &nbsp;<br>  Cerda:</span>
+            <input type='number' name='destetados2' id="destetados2" value="55.43">
+          </label>
+        </div>
+
+        <div class="input_responsive_width_destetados2">
+          <label style="margin-left: 15px">
+            <span>Tamaño medio camada:</span>
+            <input type='number' name='destetados3' id="destetados3" value="10.24">
+          </label>
+        </div>
+
+        <label class="buttonLabel" style="width: 100%">
+          <span>&nbsp;</span>
+          <input type="button" class="button" value="Guardar" />
+        </label>
+      </form>
+
+
+
+
+    </div>
+
+</main> <!-- .cd-main-content -->
+
+
+</div>
+
+
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery.menu-aim.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/chars.js"></script>
+<script src="js/chart.js"></script>
+</body>
+</html>
