@@ -990,6 +990,10 @@ body {
   font-family: arial;
   align: center;
 }
+
+#msform .first-button {
+  margin-top: auto;
+}
 #msform .action-button:hover, #msform .action-button:focus {
   box-shadow: 0 0 0 2px white, 0 0 0 3px #3399ff;
 }
@@ -1135,7 +1139,7 @@ select{
 
 
 #msform .createSession {
-  width: 85%;
+  width: 87%;
   display:inline;
 
 }
@@ -1170,7 +1174,7 @@ select{
 }
 
 #msform .four-input  {
-  width:20.6%;
+  width:21%;
   border-right-width: 1px;
   display: inline;
 }
@@ -1180,7 +1184,7 @@ only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 
   #msform .four-input  {
-    width:48.6%;
+    width:43%;
   }
 
   #msform .double-input-responsive  {
@@ -1351,8 +1355,13 @@ only screen and (max-width: 760px),
 	}
 
   #msform .action-button {
-    margin-right: 35%;
+    margin-right: 6%;
+    width: 228px;
   }
+
+  #msform .first-button {
+  margin-top: 30px;
+}
 
 
 }
@@ -1406,7 +1415,7 @@ only screen and (max-width: 760px),
 }
 
 .input_responsive_width2 {
-  width: 33.33333333%;
+  width: 50%;
   position: relative;
   min-height: 1px;
   padding-right: 15px;
@@ -1423,31 +1432,16 @@ only screen and (max-width: 760px),
   float: left;
 }
 
-.input_responsive_width_intervalo {
+.input_partos2{
+  width: 50%;
+  float: left;
+  position: relative;
+}
+
+.input_destete3{
   width: 33.33333333%;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
   float: left;
-}
-
-.input_responsive_width_destetados1 {
-  width: 25%;
   position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-  float: left;
-}
-
-.input_responsive_width_destetados2 {
-  width: 32%;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-  float: left;
 }
 
 @media
@@ -1465,16 +1459,13 @@ only screen and (max-width: 760px),
   .input_responsive_width3 {
     width: 83%;
   }
-  .input_responsive_width_intervalo {
-    width: 63%;
+
+  .input_partos2{
+    width: 100%;
   }
 
-  .input_responsive_width_destetados1 {
-    width: 70%;
-  }
-
-  .input_responsive_width_destetados2 {
-    width: 70%;
+  .input_destete3{
+    width: 100%;
   }
 
 }

@@ -33,7 +33,7 @@
 
                 <ul>
 
-                    <li><a href="#0">Settings</a></li>
+                    <li><a href="user-params.html">Settings</a></li>
                     <li><a href="#0">Logout</a></li>
                 </ul>
             </li>
@@ -60,7 +60,7 @@
             <li class="has-children settings">
                 <a href="#0">Settings</a>
    					<ul>
-						<li><a href="user-params.html">User</a></li>
+
             			<li><a href="farm-params.html">Farm</a></li>
                         <li><a href="produccion-params.html">Production</a></li>
 		                  <li><a href="censo-params.html">Censo</a></li>
@@ -101,50 +101,52 @@
         </h1>
         <label>
           <span style="width: 100%">Número medio de camadas:</span>
-          <input id="camadas" name="camadas" type="number" min="1" max="5" value="7.78" style="width: 33.3333%">
+          <input id="camadas" name="camadas" type="number" min="1" max="5" value="7.78" style="width: 100%">
         </label>
 
         <label>
           <span style="width: 100%">Partos</span>
         </label>
+        <div class="col-xs-12">
+            <div class="input_partos2">
+              <label style="margin-left: 15px; ">
+                <span>Número medio al año:</span>
+                <input type='number' name='partosMedio' id="partosMedio" value="2.30" style="width: 100%">
+              </label>
+            </div>
 
-        <div class="input_responsive_width3">
-          <label style="margin-left: 15px">
-            <span>Número medio al año:</span>
-            <input type='number' name='partosMedio' id="partosMedio" value="2.30" style="width: 70%">
-          </label>
-        </div>
-
-        <div class="input_responsive_width_intervalo">
-          <label style="margin-left: 15px">
-            <span>Intervalo/días:</span>
-            <input type='number' name='intervalo' id="intervalo" value="150.51">
-          </label>
+            <div class="input_partos2">
+              <label style="margin-left: 15px;">
+                <span>Intervalo/días:</span>
+                <input type='number' name='intervalo' id="intervalo" value="150.51" style="width: 100%">
+              </label>
+            </div>
         </div>
 
         <label>
           <span style="width: 100%">Destete</span>
         </label>
+        <div class="col-xs-12">
+            <div class="input_destete3">
+              <label style="margin-left: 15px">
+                <span style="width: 100%">Destetados &nbsp; Cerda/Año:</span>
+                <input type='number' name='destetados' id="destetados" value="24.13" style="width: 100%">
+              </label>
+            </div>
 
-        <div class="input_responsive_width_destetados1">
-          <label style="margin-left: 15px">
-            <span>Destetados &nbsp; Cerda/Año:</span>
-            <input type='number' name='destetados' id="destetados" value="24.13">
-          </label>
-        </div>
+            <div class="input_destete3">
+              <label style="margin-left: 15px">
+                <span>Destetados  &nbsp;<br>  Cerda:</span>
+                <input type='number' name='destetados2' id="destetados2" value="55.43" style="width: 100%">
+              </label>
+            </div>
 
-        <div class="input_responsive_width_destetados1">
-          <label style="margin-left: 15px">
-            <span>Destetados  &nbsp;<br>  Cerda:</span>
-            <input type='number' name='destetados2' id="destetados2" value="55.43">
-          </label>
-        </div>
-
-        <div class="input_responsive_width_destetados2">
-          <label style="margin-left: 15px">
-            <span>Tamaño medio camada:</span>
-            <input type='number' name='destetados3' id="destetados3" value="10.24">
-          </label>
+            <div class="input_destete3">
+              <label style="margin-left: 15px">
+                <span>Tamaño medio camada:</span>
+                <input type='number' name='destetados3' id="destetados3" value="10.24" style="width: 100%">
+              </label>
+            </div>
         </div>
 
         <label class="buttonLabel" style="width: 100%">
