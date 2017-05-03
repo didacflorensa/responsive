@@ -939,7 +939,7 @@ body {
 }
 /*form styles*/
 #msform {
-  width: 600px;
+  width: 100%;
   margin: 50px auto;
   text-align: center;
   position: relative;
@@ -976,6 +976,11 @@ body {
   color: #2C3E50;
   font-size: 13px;
 }
+
+#numericalinput input {
+  padding: 5px;
+}
+
 /*buttons*/
 #msform .action-button {
   width: 100px;
@@ -1081,7 +1086,7 @@ select{
   font-size: 16px;
   margin: 0;
   outline: 0;
-  padding: 7px;
+  padding: 3px;
   width: 90%;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1128,53 +1133,83 @@ select{
   font-family: arial;
   display:inline-block;
 }
+
+#msform .tick-button {
+  background: #3399ff;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding:6px 10px;
+  font-size:16px;
+  font-family: arial;
+  display:inline-block;
+}
+
 #msform .add-button:hover, #msform .action-button:focus {
   box-shadow: 0 0 0 2px white, 0 0 0 3px #3399ff;
 }
 
+#msform .tick-button:hover, #msform .action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #3399ff;
+}
+
+#msform .vspace{
+  margin-bottom: 15px;
+}
 
 #msform .right-form{
   text-align: right;
 }
 
+#msform .icon-button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+
 
 #msform .createSession {
-  width: 87%;
+  width: 99%;
   display:inline;
 
 }
 
 #msform .createSession2 {
-  width: 43%;
+  width: 49%;
   display:inline;
 }
 
 #msform .double-input  {
-  width:42.9%;
+  width:49%;
   border-right-width: 1px;
   display: inline;
 }
 
 #msform .double-input-responsive  {
-  width:42.9%;
+  width:49%;
   border-right-width: 1px;
   display: inline;
 }
 
 #msform .triple-input  {
-  width:28.1%;
+  width:32%;
   border-right-width: 1px;
   display: inline;
 }
 
 #msform .triple-input-responsive  {
-  width:28.1%;
+  width:32%;
   border-right-width: 1px;
   display: inline;
 }
 
 #msform .four-input  {
-  width:21%;
+  width:24%;
   border-right-width: 1px;
   display: inline;
 }
@@ -1184,24 +1219,24 @@ only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 
   #msform .four-input  {
-    width:43%;
+    width:100%;
   }
 
-  #msform .double-input-responsive  {
+  /*#msform .double-input-responsive  {
     width:50%;
-  }
+  }*/
 
   #msform .triple-input-responsive  {
-    width:50%;
+    width:99%;
   }
 }
 
 
 #msform .full-input {
   display: inline-block;
-  padding: 1px;
+  padding: 0px;
   border: 1px solid black;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
 }
 
 #msform .custom-input input {
@@ -1248,21 +1283,21 @@ only screen and (max-width: 760px),
 }
 
 #msform .hideName{
-	visibility: hidden;
+  visibility: hidden;
 }
 
 #msform .hideLongName {
-	visibility: visible;
+  visibility: visible;
 }
 
 
 /* End Create Session*/
 @media
-only screen and (max-width: 760px),
+only screen and (max-width: 768px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
   #msform {
-    width: 320px;
-    margin: 5px;
+    width: 100%;
+    margin: 0%;
   }
   #msform fieldset{
     background: white;
@@ -1272,7 +1307,7 @@ only screen and (max-width: 760px),
     padding: 20px 30px;
     box-sizing: border-box;
     width: 100%;
-    margin: 0 1px;
+    margin: 0 0px;
     margin-top: 25px;
 
     /*stacking fieldsets above each other*/
@@ -1292,18 +1327,18 @@ only screen and (max-width: 760px),
     list-style-type: none;
     color: black;
     text-transform: uppercase;
-    font-size: 9px;
-    width:30%;
+    font-size: 6px;
+    width:16.66%;
     float: left;
     position: relative;
   }
   #progressbar li:before {
     content: counter(step);
     counter-increment: step;
-    width: 25%;
+    width: 20px;
     line-height: 20px;
     display: block;
-    font-size: 10px;
+    font-size: 15px;
     color: white;
     background: black;
     border-radius: 100px;
@@ -1317,9 +1352,8 @@ only screen and (max-width: 760px),
     background: black;
     position: absolute;
     left: -50%;
-    top: 9px;
+    top: 10px;
     z-index: -1; /*put it behind the numbers*/
-    display: none;
   }
   #progressbar li:first-child:after {
     /*connector not needed before the first step*/
@@ -1346,13 +1380,13 @@ only screen and (max-width: 760px),
     width: 80%;
   }
 
-	#msform .hideName{
-		visibility: visible;
-	}
+  #msform .hideName{
+    visibility: visible;
+  }
 
-	#msform .hideLongName {
-		visibility: hidden;
-	}
+  #msform .hideLongName {
+    visibility: hidden;
+  }
 
   #msform .action-button {
     margin-right: 6%;
@@ -1361,7 +1395,7 @@ only screen and (max-width: 760px),
 
   #msform .first-button {
   margin-top: 30px;
-}
+  }
 
 
 }
@@ -1399,9 +1433,9 @@ display: block;
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 
-	.hideTablefoot {
-		display: none;
-	}
+  .hideTablefoot {
+    display: none;
+  }
 
 }
 
@@ -1751,3 +1785,72 @@ select {
 }
 
 /*End Register*/
+
+
+/* PANELS */
+.panel-blue {
+  border-color: #5cb85c;
+}
+.panel-blue > .panel-heading {
+  border-color: #5cb85c;
+  color: white;
+  background-color: #5cb85c;
+}
+.panel-blue > a {
+  color: #5cb85c;
+}
+.panel-blue > a:hover {
+  color: #3d8b3d;
+}
+
+
+.panel-green {
+  border-color: #4286f4;
+}
+.panel-green > .panel-heading {
+  border-color: #4286f4;
+  color: white;
+  background-color: #4286f4;
+}
+.panel-green > a {
+  color: #4286f4;
+}
+.panel-green > a:hover {
+  color: #377def;
+}
+.panel-red {
+  border-color: #d9534f;
+}
+.panel-red > .panel-heading {
+  border-color: #d9534f;
+  color: white;
+  background-color: #d9534f;
+}
+.panel-red > a {
+  color: #d9534f;
+}
+.panel-red > a:hover {
+  color: #b52b27;
+}
+.panel-yellow {
+  border-color: #f0ad4e;
+}
+.panel-yellow > .panel-heading {
+  border-color: #f0ad4e;
+  color: white;
+  background-color: #f0ad4e;
+}
+.panel-yellow > a {
+  color: #f0ad4e;
+}
+.panel-yellow > a:hover {
+  color: #df8a13;
+}
+
+.huge {
+   font-size: 20px;
+ }
+.huge2 {
+  font-size: 20px;
+}
+/* END PANELS*/

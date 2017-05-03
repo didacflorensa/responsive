@@ -1,0 +1,271 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap style -->
+
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+    <title>ePigManagement | ePigTeam</title>
+</head>
+<body>
+<header class="cd-main-header">
+    <a href="#0" class="cd-logo"><img src="img/epig2-logo.svg" alt="Logo"></a>
+
+    <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+    <nav class="cd-nav">
+        <ul class="cd-top-nav">
+            <li><a href="crearSession.html">New</a></li>
+            <li><a href="#0">Dashboard</a></li>
+			<li><a href="contact.html">Contact</a></li>
+            <li class="has-children account">
+                <a href="#0">
+                    <!--<img src="img/cd-avatar.png" alt="avatar"> -->
+                    dflorensa
+                </a>
+
+                <ul>
+
+                    <li><a href="user-params.html">Settings</a></li>
+                    <li><a href="#0">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header> <!-- .cd-main-header -->
+
+
+<main class="cd-main-content">
+    <nav class="cd-side-nav">
+        <ul>
+            <li class="cd-label">Main</li>
+            <li class="has-children charts">
+                <a href="#0">Charts</a>
+                <ul>
+                    <li><a href="chart.html">Charts 1</a></li>
+                    <li><a href="#0">Charts 2</a></li>
+                    <li><a href="#0">Charts 3</a></li>
+                </ul>
+            </li>
+            <li class="has-children ranking">
+                <a href="table.html">Ranking</a>
+            </li>
+            <li class="has-children settings">
+                <a href="viewParams.html">Settings</a>
+					<ul>
+						<li><a href="farm-params.html">Farm</a></li>
+						<li><a href="produccion-params.html">Production</a></li>
+						<li><a href="censo-params.html">Censo</a></li>
+                        <li><a href="precio-params.html">Price</a></li>
+                        <li><a href="productividad-params.html">Productividad</a></li>
+					</ul>                
+            </li><li class="has-children summary">
+            <a href="#0">Summary</a>
+        </li>
+        </ul>
+
+        <ul>
+            <li class="cd-label">Actions</li>
+            <li class="has-children notifications active">
+                <a href="#0">Notifications<span class="count">3</span></a>
+                <!--
+                <ul>
+                    <li><a href="#0">All Notifications</a></li>
+                    <li><a href="#0">Friends</a></li>
+                    <li><a href="#0">Other</a></li>
+                </ul> -->
+            </li>
+            <li class="has-children users">
+                <a href="pdf.html">Pdf</a>
+            </li>
+            <li class="has-children contact">
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid content-wrapper">
+
+		<h1>Dashboard</h1>
+		<div class="row">
+			<div class="col-lg-3 col-md-6">
+				<div class="panel panel-blue">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-xs-3">
+								<i class="fa fa-home fa-5x"></i>
+							</div>
+							<div class="col-xs-9 text-right">
+								<div class="huge">Granja 1</div>
+								<div>Granja Actual</div>
+							</div>
+						</div>
+					</div>
+					<a href="#">
+						<div class="panel-footer">
+							<span class="pull-left">Veure detalls</span>
+							<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+							<div class="clearfix"></div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="panel panel-green">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-xs-3">
+								<i class="fa fa-star fa-5x"></i>
+							</div>
+							<div class="col-xs-9 text-right">
+								<div class="huge">12 €</div>
+								<div>Beneficis</div>
+							</div>
+						</div>
+					</div>
+					<a href="#">
+						<div class="panel-footer">
+							<span class="pull-left">Veure detalls</span>
+							<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+							<div class="clearfix"></div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="panel panel-yellow">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-xs-3">
+								<i class="fa fa-tasks fa-5x"></i>
+							</div>
+							<div class="col-xs-9 text-right">
+								<div class="huge2">12-04-2015</div>
+								<div>Ultim Cens</div>
+							</div>
+						</div>
+					</div>
+					<a href="#">
+						<div class="panel-footer">
+							<span class="pull-left">Veure detalls</span>
+							<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+							<div class="clearfix"></div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="panel panel-red">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-xs-3">
+								<i class="fa fa-support fa-5x"></i>
+							</div>
+							<div class="col-xs-9 text-right">
+								<div class="huge2">01-04-2015</div>
+								<div>Ultima calibració</div>
+							</div>
+						</div>
+					</div>
+					<a href="#">
+						<div class="panel-footer">
+							<span class="pull-left">Veure detalls</span>
+							<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+							<div class="clearfix"></div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <i class="fa fa-bar-chart-o fa-fw"></i> Estructura de la Granja
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                        <div id="morris-area-chart" style="position: relative;"><svg height="378" version="1.1" width="788.6666870117188" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; top: -0.900024px;"><desc>Created with Raphaël 2.2.0</desc><defs></defs><text style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="51.16666793823242" y="344.5" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal"><tspan dy="4">0</tspan></text><path style="" fill="none" stroke="#aaaaaa" d="M63.66666793823242,344.5H763.6666870117188" stroke-width="0.5"></path><text style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="51.16666793823242" y="264.625" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal"><tspan dy="4">7,500</tspan></text><path style="" fill="none" stroke="#aaaaaa" d="M63.66666793823242,264.625H763.6666870117188" stroke-width="0.5"></path><text style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="51.16666793823242" y="184.75" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal"><tspan dy="4">15,000</tspan></text><path style="" fill="none" stroke="#aaaaaa" d="M63.66666793823242,184.75H763.6666870117188" stroke-width="0.5"></path><text style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="51.16666793823242" y="104.875" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal"><tspan dy="4">22,500</tspan></text><path style="" fill="none" stroke="#aaaaaa" d="M63.66666793823242,104.875H763.6666870117188" stroke-width="0.5"></path><text style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="51.16666793823242" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal"><tspan dy="4">30,000</tspan></text><path style="" fill="none" stroke="#aaaaaa" d="M63.66666793823242,25H763.6666870117188" stroke-width="0.5"></path><text style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="634.4124685133639" y="357" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(1,0,0,1,0,6.5)"><tspan dy="4">2012</tspan></text><text style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="323.9471671572939" y="357" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(1,0,0,1,0,6.5)"><tspan dy="4">2011</tspan></text><path style="fill-opacity: 1;" fill="#7cb57c" stroke="none" d="M63.66666793823242,287.91655000000003C83.22137456188672,282.05905,122.33078780919531,269.9021793289921,141.8854944328496,264.48655C161.44906136761568,259.0684668289921,200.57619523714777,251.9954382198953,220.13976217191384,244.5817C239.49954195110942,237.24518821989528,278.21910150950055,207.67466730437283,297.57888128869615,205.48555C316.7171532900977,203.32147980437284,354.99369729290095,225.57679085184336,374.1319692943025,227.16895C393.6866759179568,228.79575335184336,432.7960891652654,217.27800794450735,452.3507957889197,218.3614C471.91436272368577,219.44528294450737,511.04149659321786,255.06960811518326,530.6050635279839,235.83805C549.9648433071795,216.80682061518326,588.6844028655706,74.59384939345388,608.0441826447662,65.31025C627.39510211285,56.03089939345388,666.0969410490177,147.97400743566388,685.4478605171015,161.58625C705.0025671407558,175.34184493566386,744.1119803880645,171.4827625,763.6666870117188,174.7816L763.6666870117188,344.5L63.66666793823242,344.5Z" fill-opacity="1"></path><path style="" fill="none" stroke="#4da74d" d="M63.66666793823242,287.91655000000003C83.22137456188672,282.05905,122.33078780919531,269.9021793289921,141.8854944328496,264.48655C161.44906136761568,259.0684668289921,200.57619523714777,251.9954382198953,220.13976217191384,244.5817C239.49954195110942,237.24518821989528,278.21910150950055,207.67466730437283,297.57888128869615,205.48555C316.7171532900977,203.32147980437284,354.99369729290095,225.57679085184336,374.1319692943025,227.16895C393.6866759179568,228.79575335184336,432.7960891652654,217.27800794450735,452.3507957889197,218.3614C471.91436272368577,219.44528294450737,511.04149659321786,255.06960811518326,530.6050635279839,235.83805C549.9648433071795,216.80682061518326,588.6844028655706,74.59384939345388,608.0441826447662,65.31025C627.39510211285,56.03089939345388,666.0969410490177,147.97400743566388,685.4478605171015,161.58625C705.0025671407558,175.34184493566386,744.1119803880645,171.4827625,763.6666870117188,174.7816" stroke-width="3"></path><circle cx="63.66666793823242" cy="287.91655000000003" r="2" fill="#4da74d" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="141.8854944328496" cy="264.48655" r="2" fill="#4da74d" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="220.13976217191384" cy="244.5817" r="2" fill="#4da74d" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="297.57888128869615" cy="205.48555" r="2" fill="#4da74d" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="374.1319692943025" cy="227.16895" r="2" fill="#4da74d" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="452.3507957889197" cy="218.3614" r="2" fill="#4da74d" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="530.6050635279839" cy="235.83805" r="2" fill="#4da74d" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="608.0441826447662" cy="65.31025" r="2" fill="#4da74d" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="685.4478605171015" cy="161.58625" r="2" fill="#4da74d" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="763.6666870117188" cy="174.7816" r="2" fill="#4da74d" stroke="#ffffff" style="" stroke-width="1"></circle><path style="fill-opacity: 1;" fill="#a8b4bd" stroke="none" d="M63.66666793823242,316.1071C83.22137456188672,309.701125,122.33078780919531,296.0931478057758,141.8854944328496,290.4832C161.44906136761568,284.8707103057758,200.57619523714777,274.28455,220.13976217191384,271.21735C239.49954195110942,268.1821,278.21910150950055,268.54101051495974,297.57888128869615,266.0734C316.7171532900977,263.6340230149597,354.99369729290095,255.01208124570644,374.1319692943025,251.5894C393.6866759179568,248.09224374570644,432.7960891652654,238.24897661664778,452.3507957889197,238.39405C471.91436272368577,238.53918911664778,511.04149659321786,267.5737117801047,530.6050635279839,252.75025C549.9648433071795,238.0811992801047,588.6844028655706,129.12171532387273,608.0441826447662,120.424C627.39510211285,111.73026532387274,666.0969410490177,174.053560567069,685.4478605171015,183.18445C705.0025671407558,192.411498067069,744.1119803880645,191.187925,763.6666870117188,193.85575L763.6666870117188,344.5L63.66666793823242,344.5Z" fill-opacity="1"></path><path style="" fill="none" stroke="#7a92a3" d="M63.66666793823242,316.1071C83.22137456188672,309.701125,122.33078780919531,296.0931478057758,141.8854944328496,290.4832C161.44906136761568,284.8707103057758,200.57619523714777,274.28455,220.13976217191384,271.21735C239.49954195110942,268.1821,278.21910150950055,268.54101051495974,297.57888128869615,266.0734C316.7171532900977,263.6340230149597,354.99369729290095,255.01208124570644,374.1319692943025,251.5894C393.6866759179568,248.09224374570644,432.7960891652654,238.24897661664778,452.3507957889197,238.39405C471.91436272368577,238.53918911664778,511.04149659321786,267.5737117801047,530.6050635279839,252.75025C549.9648433071795,238.0811992801047,588.6844028655706,129.12171532387273,608.0441826447662,120.424C627.39510211285,111.73026532387274,666.0969410490177,174.053560567069,685.4478605171015,183.18445C705.0025671407558,192.411498067069,744.1119803880645,191.187925,763.6666870117188,193.85575" stroke-width="3"></path><circle cx="63.66666793823242" cy="316.1071" r="2" fill="#7a92a3" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="141.8854944328496" cy="290.4832" r="2" fill="#7a92a3" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="220.13976217191384" cy="271.21735" r="2" fill="#7a92a3" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="297.57888128869615" cy="266.0734" r="2" fill="#7a92a3" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="374.1319692943025" cy="251.5894" r="2" fill="#7a92a3" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="452.3507957889197" cy="238.39405" r="2" fill="#7a92a3" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="530.6050635279839" cy="252.75025" r="2" fill="#7a92a3" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="608.0441826447662" cy="120.424" r="2" fill="#7a92a3" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="685.4478605171015" cy="183.18445" r="2" fill="#7a92a3" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="763.6666870117188" cy="193.85575" r="2" fill="#7a92a3" stroke="#ffffff" style="" stroke-width="1"></circle><path style="fill-opacity: 1;" fill="#2677b5" stroke="none" d="M63.66666793823242,316.1071C83.22137456188672,315.8089,122.33078780919531,317.9036102661382,141.8854944328496,314.9143C161.44906136761568,311.9236352661382,200.57619523714777,293.5106994764398,220.13976217191384,292.1872C239.49954195110942,290.8774869764398,278.21910150950055,306.92270054660526,297.57888128869615,304.38145C316.7171532900977,301.86927554660525,354.99369729290095,274.47960327455917,374.1319692943025,271.9735C393.6866759179568,269.4128657745592,432.7960891652654,281.46591254246886,452.3507957889197,284.1145C471.91436272368577,286.7642875424689,511.04149659321786,305.7502816753927,530.6050635279839,293.16700000000003C549.9648433071795,280.7147941753927,588.6844028655706,191.78478144598307,608.0441826447662,183.97255C627.39510211285,176.16389394598306,666.0969410490177,221.8889269073104,685.4478605171015,230.68345C705.0025671407558,239.5705894073104,744.1119803880645,248.6952625,763.6666870117188,254.69920000000002L763.6666870117188,344.5L63.66666793823242,344.5Z" fill-opacity="1"></path><path style="" fill="none" stroke="#0b62a4" d="M63.66666793823242,316.1071C83.22137456188672,315.8089,122.33078780919531,317.9036102661382,141.8854944328496,314.9143C161.44906136761568,311.9236352661382,200.57619523714777,293.5106994764398,220.13976217191384,292.1872C239.49954195110942,290.8774869764398,278.21910150950055,306.92270054660526,297.57888128869615,304.38145C316.7171532900977,301.86927554660525,354.99369729290095,274.47960327455917,374.1319692943025,271.9735C393.6866759179568,269.4128657745592,432.7960891652654,281.46591254246886,452.3507957889197,284.1145C471.91436272368577,286.7642875424689,511.04149659321786,305.7502816753927,530.6050635279839,293.16700000000003C549.9648433071795,280.7147941753927,588.6844028655706,191.78478144598307,608.0441826447662,183.97255C627.39510211285,176.16389394598306,666.0969410490177,221.8889269073104,685.4478605171015,230.68345C705.0025671407558,239.5705894073104,744.1119803880645,248.6952625,763.6666870117188,254.69920000000002" stroke-width="3"></path><circle cx="63.66666793823242" cy="316.1071" r="2" fill="#0b62a4" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="141.8854944328496" cy="314.9143" r="2" fill="#0b62a4" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="220.13976217191384" cy="292.1872" r="2" fill="#0b62a4" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="297.57888128869615" cy="304.38145" r="2" fill="#0b62a4" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="374.1319692943025" cy="271.9735" r="2" fill="#0b62a4" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="452.3507957889197" cy="284.1145" r="2" fill="#0b62a4" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="530.6050635279839" cy="293.16700000000003" r="2" fill="#0b62a4" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="608.0441826447662" cy="183.97255" r="2" fill="#0b62a4" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="685.4478605171015" cy="230.68345" r="2" fill="#0b62a4" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="763.6666870117188" cy="254.69920000000002" r="2" fill="#0b62a4" stroke="#ffffff" style="" stroke-width="1"></circle></svg><div class="morris-hover morris-default-style" style="left: 85.8938px; top: 210px; display: none;"><div class="morris-hover-row-label">2010 Q2</div><div class="morris-hover-point" style="color: #0b62a4">
+                            iPhone:
+                            2,778
+                        </div><div class="morris-hover-point" style="color: #7A92A3">
+                            iPad:
+                            2,294
+                        </div><div class="morris-hover-point" style="color: #4da74d">
+                            iPod Touch:
+                            2,441
+                        </div></div></div>
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <!-- /.panel -->
+            </div>
+
+                <div class="col-lg-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bell fa-fw"></i> Historic
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-support fa-fw"></i> New calibration
+                                    <span class="pull-right text-muted small"><em>4 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-tasks fa-fw"></i> Actualització de cens
+                                    <span class="pull-right text-muted small"><em>Fa 12 dies</em>
+                                    </span>
+                                </a>
+
+                            </div>
+                            <!-- /.list-group -->
+                            <a href="#" class="btn btn-default btn-block">View All Alerts</a>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+
+
+                    <!-- /.panel-footer -->
+
+                <!-- /.panel .chat-panel -->
+            </div>
+            <!-- /.col-lg-4 -->
+        </div>
+
+
+    </div>
+
+</main> <!-- .cd-main-content -->
+
+
+</div>
+
+
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery.menu-aim.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/chars.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/ms.js"></script>
+
+
+</body>
+</html>
