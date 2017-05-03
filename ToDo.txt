@@ -1,3 +1,10 @@
-1) Ultima part de configuacio
-2) Menus de settings
-3) Registre - (Revisar)
+1) Add new input "Type of user" (Register example) and delete "Operaciones" OK
+2) Change the name of Farm (Current Data - Dades actuals) OK
+3) Add new button (Baixa) a User.
+4) Change name of PDF (Informes). OK
+5) Change name of Summary (Simulación). OK
+6) Add icons in Contacts
+7) Main responsive
+8) New view "Farm": (NO READ)
+    - Numero de treballados
+    - Capacitat

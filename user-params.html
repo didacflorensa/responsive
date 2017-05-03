@@ -60,6 +60,7 @@
             <li class="has-children settings">
                 <a href="#">Settings</a>
    					<ul>
+                        <li><a href="farm-params.html">Current Data</a></li>
                         <li><a href="farm-params.html">Farm</a></li>
                         <li><a href="produccion-params.html">Production</a></li>
                         <li><a href="censo-params.html">Censo</a></li>
@@ -67,7 +68,7 @@
                         <li><a href="productividad-params.html">Productividad</a></li>
 					</ul>
             </li><li class="has-children summary">
-            <a href="#0">Summary</a>
+            <a href="#0">Simulación</a>
         </li>
         </ul>
 
@@ -83,7 +84,7 @@
                 </ul> -->
             </li>
             <li class="has-children users">
-                <a href="pdf.html">Pdf</a>
+                <a href="pdf.html">Informe</a>
             </li>
 			<li class="has-children contact">
 				<a href="contact.html">Contact</a>
@@ -92,10 +93,14 @@
     </nav>
 
     <div class="container-fluid content-wrapper">
+
         <form action="" method="post" class="smart">
 		  <h1>User
 		    <span></span>
 		  </h1>
+            <div class="col-xs-12" style="text-align: right">
+                <a href="">Baixa</a>
+            </div>
 		  <label>
 		    <span>User</span>
 		    <input id="user" type="text" name="user" value="Didac" readonly/>
@@ -103,28 +108,20 @@
 		
 		  <label>
 		    <span>Telephone</span>
-		    <input id="telefon" type="text" name="telefon" value="603 53 40 21" />
+		    <input id="telefon" type="text" name="telefon" value="603 53 40 21" readonly/>
 		  </label>
 		
 		  <label>
 		    <span>Notificaciones</span>
-		    <select id="notifications" name="notifications" class="selection">
-		      <option value="1" id="email">Email</option>
-		      <option value="2" id="sms">SMS</option>
-		    </select>
-		  </label>
-		
-		  <label>
-		    <span>Operaciones:</span>
-		    <select class="selection options" id="calibration" name="calibration">
-		      <option value="calibracion" id="calibracion">Calibracion</option>
-		      <option value="simulacion" id="simulacion">Simulacion</option>
-		    </select>
-		  </label>
-		  <label class="buttonLabel">
-		    <span>&nbsp;</span>
-		    <input type="button" class="button" value="Guardar" id="guardar" id="guardar"/>
-		  </label>
+              <input id="notifications" name="notifications" type="text" value="Email" readonly>
+
+          </label>
+
+            <label>
+                <span>Tipo de usuario</span>
+                <input id="usertype" name="usertype" type="text" value="Gestor" readonly>
+            </label>
+
 		</form>
     </div>
 
