@@ -7,6 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap style -->
     <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
@@ -53,20 +54,18 @@
                     <li><a href="#0">Charts 3</a></li>
                 </ul>
             </li>
-            <li class="has-children ranking">
-                <a href="table.html">Ranking</a>
-            </li>
+				<li class="has-children ranking">
+					<a href="table.html">Ranking</a>
+				</li>
             <li class="has-children settings">
                 <a href="#0">Settings</a>
-					<ul>
-
-                        <li><a href="current-data.html">Current Data</a></li>
-                        <li><a href="current-data.html">Farm</a></li>
+   					<ul>
+						<li><a href="current-data.html">Current Data</a></li>
                         <li><a href="produccion-params.html">Production</a></li>
                         <li><a href="censo-params.html">Censo</a></li>
                         <li><a href="precio-params.html">Price</a></li>
                         <li><a href="productividad-params.html">Productividad</a></li>
-					</ul>                
+					</ul>
             </li><li class="has-children summary">
             <a href="#0">Simulación</a>
         </li>
@@ -86,36 +85,32 @@
             <li class="has-children users">
                 <a href="pdf.html">Informe</a>
             </li>
-            <li class="has-children contact">
-              <a href="contact.html">Contact</a>
-            </li>            
+			<li class="has-children contact">
+				<a href="contact.html">Contact</a>
+			</li>
         </ul>
     </nav>
-    
+
     <div class="container-fluid content-wrapper">
-        <form action="" method="post" class="smart">
-          <h1>Contacta con nosotros
-            <span></span>
-          </h1>
-          <label>
-            <span>Nombre: &nbsp;*</span>
-            <input id="contact-name" name="contact-name" type="text" required/>
-          </label>
+        
+<form action="" method="post" class="smart">
+      <h1>Current Data
+        <span></span>
+      </h1>
+      <label>
+        <span>Granja:</span>
+        <select class="selectandadd selectParams" id="select_farm" name="select_farm" ></select>
+      </label>
 
-          <label>
-            <span>Email: &nbsp;*</span>
-            <input id="contact-email" name="contact-email" type="email" required/>
-          </label>
-
-          <label>
-            <span> Mensaje: &nbsp;*</span>
-            <textarea id="contact-message" name="contact-message" required></textarea>
-          </label>
-          <label class="buttonLabel">
-            <span>&nbsp;</span>
-            <input type="button" class="button" value="Enviar" id="enviar" href="chart.html"/>
-          </label>
-      </form>
+      <label>
+        <span>Fecha:</span>
+        <select class="selectandadd selectParams" id="select_date" name="select_date"></select>
+      </label>
+      <label class="buttonLabel">
+        <span>&nbsp;</span>
+        <input type="button" class="button" value="Guardar" id="guardar" />
+      </label>
+</form>
 
     </div>
 
