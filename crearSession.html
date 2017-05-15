@@ -119,16 +119,48 @@
 			        "Información sobre el parámetro");
 			    }
 
-			    function defaultValues(step) {
-					if(step == "1"){
-						$("#newFarm").val("".text());
-					}
-				}
-				
-				$("#btn_default").onclick(function () {
-					alert("btn");
-					$("#newFarm").val(" ");
-				})
+                function defaultValues(id) {
+                    var text = $("#btn_default").attr("btn");
+                    alert(text);
+                    if(id=="step1"){
+                        $("#newFarm").val(" ");
+                    } else if (id=="step2") {
+                        $("#num_ciclos").val(" ");
+                        $("#minCubriciones").val(" ");
+                        $("#maxCubriciones").val(" ");
+                        $("#minLactacion").val(" ");
+                        $("#maxLactacion").val(" ");
+                    }else if (id=="step3") {
+                        $("#tiempo_med").val(" ");
+                        $("#reposicion").val(" ");
+                    }else if (id=="step4") {
+                        $("#inseminación").val(" ");
+                        $("#antesParto").val(" ");
+                        $("#gest1-4").val(" ");
+                        $("#gest5-12").val(" ");
+                        $("#gest13-16").val(" ");
+                        $("#lechon3").val(" ");
+                        $("#lechon4").val(" ");
+                        $("#lechon5").val(" ");
+                    }else if (id=="step5") {
+                        $("#inseminacion_artificial").val(" ");
+                        $("#Consumo").val(" ");
+                        $("#Gestacion").val(" ");
+                        $("#Lactacion").val(" ");
+                        $("#Lechones").val(" ");
+                        $("#lechon").val(" ");
+                        $("#reposicion_cerda").val(" ");
+                        $("#vendida").val(" ");
+                    }else if (id=="step6") {
+                        $("#partosMedio").val(" ");
+                        $("#intervalo").val(" ");
+                        $("#destetados").val(" ");
+                        $("#destetados2").val(" ");
+                        $("#destetados3").val(" ");
+                        $("#camadas").val(" ");
+                    }
+                }
+
 
 			  </script>
 
@@ -153,8 +185,8 @@
 		      <!-- Form - Step 1. Configuration-->
 		      <fieldset>
 				  <div class="right-form vspace">
-						 	 <button name="info-step1" class="icon-button btn-autosize">
-								 <em class="glyphicon glyphicon-info-sign" onclick="info_imagen()" id="btn_info"></em>
+						 	 <button name="info-step1" class="icon-button btn-autosize" onclick="info_imagen()">
+								 <em class="glyphicon glyphicon-info-sign" id="btn_info"></em>
 							 </button>
 
 							 <button name="fill-step1" class="icon-button btn-autosize">
